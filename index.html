@@ -17,7 +17,8 @@
         </ul>
         <ul class="user-navigation">
           <li class="search">Поиск</li> <!-- Форма поиска -->
-          <li class="login-link">Вход</li> <!-- Форма входа -->
+          <li class="login-link">
+            <a class="login-link" href="login.html">Вход</a></li> <!-- Форма входа, размечена внизу -->
           <li class="user-navigation-cart">Пусто</li> <!-- Скорее всего это будет таблица-->
         </ul>
         <div class="time">
@@ -27,7 +28,7 @@
         </div>
       </nav>
     </header>
-    
+
     <main class="container">
       <h1 class="visually-hidden">Магазин «Глэйси»</h1>
 
@@ -37,17 +38,17 @@
         <div class="slide">
           <h3>Крем-брюле и пломбир с малиновым джемом</h3>
             <img src="/img/slide-1.png" width="533" height="441" alt="Крем-брюле и пломбир с малиновым джемом">
-            <span class="button">Давайте оба!</span>     <!-- Тут будет кнопка -->
+            <button class="button slide-button slide-button-1" type="button">Давайте оба!</button>     <!-- Тут будет кнопка -->
         </div>
         <div class="slide">
           <h3>Шоколадный пломбир и лимонный сорбет</h3>
           <img src="/img/slide-2.png" width="533" height="430" alt="Шоколадный пломбир и лимонный сорбет">
-          <span class="button">Давайте оба!</span>     <!-- Тут будет кнопка -->
+          <button class="button slide-button slide-button-2" type="button">Давайте оба!</button>     <!-- Тут будет кнопка -->
         </div>
         <div class="slide">
           <h3>Пломбир с помадкой и клубничный щербет</h3>
           <img src="/img/slide-3.png" width="540" height="427" alt="Пломбир с помадкой и клубничный щербет">
-          <span class="button">Давайте оба!</span>     <!-- Тут будет кнопка -->
+          <button class="button slide-button slide-button-3" type="button">Давайте оба!</span>     <!-- Тут будет кнопка -->
         </div>
       </section>
 
@@ -152,24 +153,27 @@
       <section class="subscription">
         <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будтете  всегда вкусре  всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--Форма  ввода  e-mail адреса-->
-        <span class="button subscription-button">Отправить</span>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" id="user-subscription">Электронная почта</label>
+          <input class="subscribe" id="user-subscription" type="email" name="subscribe" placeholder="Электронная почта"></input>
+          <button  class="button subscription-button" type="submit">Отправить</buttton>
+        </form>
       </section>
 
       <!--Карта-->
       <section class="map"> <!--Не уверена что это правильно-->
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/map.jpg" width="1200" height="430" alt="Карта">
-      </section>
-
-      <section class="contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-          <h3>Адрес главного офиса и офлайн-магазина:</h3>
-          <p><b>ул. Большая Конюшенная
-          19/8, Санкт-Петербург</b></p>
-          <h3>Для заказов по телефону:</h3>
-          <p><b>8 812 450-25-25</b>
-          (c 10 до 20 ежедневно)</p>
-          <a class="button" href="contacts.html">Форма обратной связи</a>
+        <section class="contacts">
+          <h3 class="visually-hidden">Контактная информация</h3>
+            <h4>Адрес главного офиса и офлайн-магазина:</h4>
+            <p><b>ул. Большая Конюшенная
+            19/8, Санкт-Петербург</b></p>
+            <h4>Для заказов по телефону:</h4>
+            <p><b>8 812 450-25-25</b>
+            (c 10 до 20 ежедневно)</p>
+            <a class="button" href="contacts.html">Форма обратной связи</a>
+        </section>
       </section>
     </main>
 
@@ -215,17 +219,29 @@
     </section>
 
     <section class="modal modal-login">
-      <h2 class="visually-hidden">Войти</h2>
-      <!-- Здесь будет форма -->
-        <span class="button button-login">Войти</span>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
+      <h2 class="visually-hidden">Вход в личный кабинет</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post" >
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-user" id="user-login" type="email" name="login" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <button class="button button-login" type="submit">Войти</button>
+        <p>
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="new-registration" href="#">Новая регистрация</a>
+        </p>
+      </form>
     </section>
 
     <section class="modal modal-feedback">
       <h2>Мы обязательно вам ответим!</h2>
       <!-- Здесь будет форма -->
-        <span class="button button-feedback">Отправить</span>
+        <buttton class="button button-feedback">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-search">
