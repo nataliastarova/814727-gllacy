@@ -42,26 +42,28 @@
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <!-- Тут должен быть слайдер, который переключает фон -->
-        <div class="slide">
-          <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+        <ul>
+          <li class="slide">
+            <h3>Крем-брюле и пломбир с малиновым джемом</h3>
             <img src="/img/slide-1.png" width="533" height="441" alt="Крем-брюле и пломбир с малиновым джемом">
-            <button class="button slide-buttton" type="button" id="slide-button-1">Давайте оба!</button>     <!-- Может лучше было списком сделать?-->
-        </div>
-        <div class="slide">
-          <h3>Шоколадный пломбир и лимонный сорбет</h3>
-          <img src="/img/slide-2.png" width="533" height="430" alt="Шоколадный пломбир и лимонный сорбет">
-          <button class="button slide-button" type="button" id="slide-button-2">Давайте оба!</button>     <!-- Тут будет кнопка -->
-        </div>
-        <div class="slide">
-          <h3>Пломбир с помадкой и клубничный щербет</h3>
-          <img src="/img/slide-3.png" width="540" height="427" alt="Пломбир с помадкой и клубничный щербет">
-          <button class="button slide-button" id="slide-button-3" type="button">Давайте оба!</button>     <!-- Тут будет кнопка -->
-        </div>
+            <button class="button slide-buttton" type="button" id="slide-button-1">Давайте оба!</button>     <!-- Сделала списком-->
+          </li>
+          <li class="slide">
+            <h3>Шоколадный пломбир и лимонный сорбет</h3>
+            <img src="/img/slide-2.png" width="533" height="430" alt="Шоколадный пломбир и лимонный сорбет">
+            <button class="button slide-button" type="button" id="slide-button-2">Давайте оба!</button>     <!-- Тут будет кнопка -->
+          </li>
+          <li class="slide">
+            <h3>Пломбир с помадкой и клубничный щербет</h3>
+            <img src="/img/slide-3.png" width="540" height="427" alt="Пломбир с помадкой и клубничный щербет">
+            <button class="button slide-button" id="slide-button-3" type="button">Давайте оба!</button>     <!-- Тут будет кнопка -->
+          </li>
+        </ul>
         <div class="slide">
           <ul>
-            <li><button class="slider-button" type="button">Первый слайд</button></li> <!-- А тут  id  нужны?-->
-            <li><button class="slider-button" type="button">Второй Слайд</button></li>
-            <li><button class="slider-button" type="button">Третий слайд</button></li>
+            <li><button class="slider-button" id="slider-button-1" type="button">Первый слайд</button></li> <!--  добавила  id-->
+            <li><button class="slider-button" id="slider-button-2" type="button">Второй Слайд</button></li>
+            <li><button class="slider-button" id="slider-button-3" type="button">Третий слайд</button></li>
           </ul>
       </div>
       </section>
@@ -82,10 +84,10 @@
         </ul>
       </section>
 
-      <section class="bestsellers">
+      <section class="catalog">
         <h2 class="visually-hidden">Хит продаж</h2>
-        <ul class="hit-list">
-          <li class="hit-item">
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <h3>
               <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h3>
@@ -99,44 +101,38 @@
             </p>
             <a class="button button-item" href="#">Быстрый просмотр</a>
           </li>
-          <li class="hit-item">
-            <h3>
-              <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
-            </h3>
-            <p class="hit-image">
-              <a href="catalog-item.html">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              <p class="catalog-item-image">
                 <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              </a>
-            </p>
-            <p class="hit-price">
+              </p>
+            </a>
+            <p class="item-price">
               <b>380 ₽</b><span>&#47;кг</span>
             </p>
             <a class="button button-item" href="#">Быстрый просмотр</a>
           </li>
-          <li class="hit-item">
-            <h3>
-              <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            </h3>
-            <p class="hit-image">
-              <a href="catalog-item.html">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <p class="catalog-item-image">
                 <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              </a>
-            </p>
-            <p class="hit-price">
+              </p>
+            </a>
+            <p class="item-price">
               <b>355 ₽</b><span>&#47;кг</span>
             </p>
             <a class="button button-item" href="#">Быстрый просмотр</a>
           </li>
-          <li class="hit-item">
-            <h3>
-              <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
-            </h3>
-            <p class="hit-image">
-              <a href="catalog-item.html">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              <p class="catalog-item-image">
                 <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              </a>
-            </p>
-            <p class="hit-price">
+              </p>
+            </a>
+            <p class="item-price">
               <b>415 ₽</b><span>&#47;кг</span>
             </p>
             <a class="button button-item" href="#">Быстрый просмотр</a>
@@ -146,21 +142,21 @@
 
       <section class="features">
         <h2 class="visually-hidden">Особенности</h2>
-          <h3>Магазин Глэйси - зто онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-          <ul class="features-list">
-            <li class="feature-item">
-              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий </p>
-            </li>
-            <li class="feature-item">
-              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
-            </li>
-            <li class="feature-item">
-              <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
-            </li>
-            <li class="feature-item">
-              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
-            </li>
-          </ul>
+        <p>Магазин Глэйси - зто онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <ul class="features-list">
+          <li class="feature-item">
+            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий </p>
+          </li>
+          <li class="feature-item">
+            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+          </li>
+          <li class="feature-item">
+            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
+          </li>
+          <li class="feature-item">
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
+          </li>
+        </ul>
       </section>
 
       <article class="news">
@@ -175,7 +171,7 @@
           <label class="visually-hidden" for="user-subscription">Электронная почта</label>
           <input class="subscribe" id="user-subscription" type="email" name="subscribe" placeholder="Электронная почта" required>
         </form>
-        <button class="button subscription-button" type="submit">Отправить</buttton>
+        <button class="button subscription-button" type="submit">Отправить</button>
       </section>
 
       <!--Карта-->
