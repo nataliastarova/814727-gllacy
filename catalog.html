@@ -50,7 +50,7 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-            <div class="filter-items"> <!--Может надо было не в div  а в  fieldset обернуть?-->
+            <div class="filter-items">
               <label for="filter-features">Сортировка:</label>
               <select id="filter-features" name="food">
                 <option value="popular">По популярности</option>
@@ -60,7 +60,7 @@
               </select>
             </div>
 
-            <div class="filter-items"> <!--может надо было не в div  а в  fieldset обернуть?-->
+            <div class="filter-items">
               Цена: 100 руб. - 500 руб.
               <div class="min">
                 <!--Миннимальное значение-->
@@ -129,13 +129,15 @@
           <h2 class="visually-hidden">Cписок товаров</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <a href="catalog-item.html">
-                <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                <p class="catalog-item-image">
+              <h3>
+                <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              </h3>
+              <p class="hit-image">
+                <a href="catalog-item.html">
                   <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                </p>
-              </a>
-              <p class="item-price">
+                </a>
+              </p>
+              <p class="hit-price">
                 <b>310 ₽</b><span>&#47;кг</span>
               </p>
               <a class="button button-item" href="#">Быстрый просмотр</a>
