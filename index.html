@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -48,7 +49,7 @@
           <li class="slide">
             <h3>Крем-брюле и пломбир с малиновым джемом</h3>
             <img src="/img/slide-1.png" width="533" height="441" alt="Крем-брюле и пломбир с малиновым джемом">
-            <button class="button slide-buttton" type="button" id="slide-button-1">Давайте оба!</button>     <!-- Сделала списком-->
+            <button class="button slide-button" type="button" id="slide-button-1">Давайте оба!</button>     <!-- Сделала списком-->
           </li>
           <li class="slide">
             <h3>Шоколадный пломбир и лимонный сорбет</h3>
@@ -161,20 +162,22 @@
         </ul>
       </section>
 
-      <article class="news">
-        <h2>Новости в нашем блоге</h2>
-        <a href="blog-news.html">10 способов сервировки фруктовых щербетов к столу</a>
-      </article>
+      <div class="index-columns"> <!--Обернула в див для позиционирования-->
+        <article class="news">
+          <h2>Новости в нашем блоге</h2>
+          <a href="blog-news.html">10 способов сервировки фруктовых щербетов к столу</a>
+        </article>
 
-      <section class="subscription">
-        <h2 class="visually-hidden">Подписка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будтете  всегда вкусре  всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="user-subscription">Электронная почта</label>
-          <input class="subscribe" id="user-subscription" type="email" name="subscribe" placeholder="Электронная почта" required>
-        </form>
-        <button class="button subscription-button" type="submit">Отправить</button>
-      </section>
+        <section class="subscription">
+          <h2 class="visually-hidden">Подписка</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будтете  всегда вкусре  всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="user-subscription">Электронная почта</label>
+            <input class="subscribe" id="user-subscription" type="email" name="subscribe" placeholder="Электронная почта" required>
+          </form>
+          <button class="button subscription-button" type="submit">Отправить</button>
+        </section>
+      </div>
 
       <!--Карта-->
       <section class="map"> <!--Не уверена что это правильно-->
@@ -281,10 +284,10 @@
 
     <section class="modal modal-search">
       <h2 class="visually-hidden">Поиск</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="find" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="search-field">Строка поиска</label>
-          <input type="search" id="search-field" name="search" placeholder="Что ищем?">
+          <input class="search-find" type="search" id="search-field" name="search" placeholder="Что ищем?">
         </p>
         <button class="visually-hidden" type="submit" value="Найти"></button> <!-- В макете кнопки нет, но по логике она должна быть-->
       </form>

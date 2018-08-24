@@ -13,16 +13,39 @@ body {
  }
 
  a {
-
+  text-decoration: none;
  }
 
+.button {
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: none;
+  text-decoration: none;
+
+  background-color: #ee5e3f;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #f07963; /* Не понимаю как задать цвет  кнопки при нажатии*/
+}
+
+
+/*header*/
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 
-  background-color: #849d8f:
+  background-color: #849d8f;
 }
 
 .site-navigation,
@@ -33,13 +56,423 @@ body {
 .site-navigation a,
 .user-navigation a {
   color: #ffffff;
+  /*background-color: #849d8f; А еще  как добиться подчеркивания ссылок в главной, ощущение что это декоративный элемент*/
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background-color: #ffbc9e;
+  color: #333333;
+  background-color: #f8f7f4;
 }
 
 /* Непонятно как размечать режим работы  и телефон, размер шрифта разный, может надо  кажду строчку отдельно обернуть в абзац?*/
+
+/*main*/
+/*Слайдер*/
+.slider {
+  font-weight: 700;
+  line-height: 60px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.slide {
+  list-style: none;
+  text-decoration: none;
+}
+
+.slide h3 {
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.slide ul {    /* Увидела что див с кнопками листалки
+   одноименный со списком фона поэтому решила выключить маркеры так, это норм или ужсужс и  диву лучше дать другой класс?*/
+  list-style: none;
+}
+
+.slide-button {
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+}
+
+.slider-button {
+
+}
+
+/*Промо-акции*/
+/*Тут у каждой акции своя  фоновая картинка,
+на лекции говорили что лучше если есть фон картинки надо
+задать  обязательно цвет фона приближенный  к  фоновому изображению.
+Но в данном случае в Глэйси в промо-акциях кмк  можно обойтись без этого, или нет?*/
+.promo {
+}
+
+.promo-list {
+  list-style: none;
+}
+
+.promo-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.promo-item {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.promo-item:first-child {
+  background-image: url("../img/banner-1.jpg");
+}
+
+.promo-item:last-child {
+  background-image: url("../img/banner-2.jpg");
+}
+
+.promo-button {
+
+}
+
+/*Каталог товаров*/
+.catalog {
+
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list a {
+  color: #ffffff;
+}
+
+.catalog-list a:hover,
+.catalog-list a:focus {
+  color: #ffbc9e;
+}
+
+.catalog-item {
+  font-weight: 500;
+  text-align: center;
+/* надо будет добавить url("../img/hit.svg"); но пока не поняла как*/
+}
+
+.catalog-item:hover {
+  background-color: #9bafa3; /* или лучше было в ргба записать? */
+}
+
+.item-price {
+  line-height: 45px
+  font-weight: 700;
+}
+
+.button-item {
+
+}
+
+/* Особенности*/
+.features {
+  color: #323232;
+  background-color: #f1e7d1;
+  background-image: url("../img/pattern.jpg");
+ }
+
+.features p:nth-child(2) { /* Если честно, подобрала значение nth-child методом перебора, не мог бы объяснить почему тут именно 2? */
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+ }
+
+.features-list {
+  list-style: none;
+ }
+
+ /*Здесь надо будет добавить иконки к абзацам*/
+ .feature-item {
+
+ }
+
+ /*Article Новости*/
+
+ .news {
+   color: #323232;
+   background-color: #ffffff;
+   background-image: url("../img/article.jpg");
+ }
+
+ .news a {
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 700;
+   color: #323232;
+   text-decoration: underline;
+ }
+
+/*Article Новости*/
+.subscription {
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  background-image: url("../img/subscription.png");
+}
+
+.subscription-form {
+  line-height: 24px;
+  color: #999999;
+}
+
+.subscription-form input[type="email"] {
+  font: inherit;
+  color: #323232;
+
+  background-color: #ffffff;
+  border: 1px solid #999999;
+}
+.subscribe  input:focus{
+  border: 2px solid #999999;
+}
+
+.subscribe:hover,
+.subscribe:focus {
+  color: #999999;
+}
+
+.subscribe:active {
+  font-weight: 700;
+  color: #323232;
+}
+
+/*Карта и контакты*/
+.map {
+
+}
+
+.contacts {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.contacts h4 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contacts b {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.feedback-button {
+
+}
+
+/*footer*/
+.main-footer  {
+  font-size: 13px;
+  line-height: 18px;
+  color: #e6ebe9;
+}
+
+.main-footer a {
+  color: #e6ebe9;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+/*Соц. сети*/
+.footer-social {
+
+}
+
+.footer-social a:hover,
+.footer-cosial a:focus {
+  color: #ffbc9e;
+}
+
+.social-button {
+  list-style: none;
+}
+
+.social-button:hover,
+.social-button:focus,  {
+
+}
+
+/*Инфо*/
+.footer-info {
+
+}
+
+.footer-info li:first-child {
+  font-weight: 700;
+}
+
+.footer-info a:hover,
+.footer-info a:focus {
+  color: #ffbc9e;
+}
+/*Копирайт*/
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.copyright-info a:hover,
+.copyright-info a:focus {
+  color: #ffbc9e;
+}
+
+/*Ниже всплывающие окна*/
+.modal {
+  background-color: #f8f7f4;
+}
+
+/*Каталог*/
+.modal-menu {
+
+}
+
+.modal-catalog {
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.modal-catalog li:first-child {
+  font-weight: 700;
+}
+
+.modal-catalog a:hover,
+.modal-catalog a:focus {
+  background-color: #fbded7;
+}
+
+.modal-catalog a:active {
+  background-color: #f6b5a5;
+}
+
+/*Вход в личный кабинет*/
+.modal-login {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font:inherit;
+  color: #323232;
+
+  background-color: #ffffff;
+  border: 1px solid #999999;
+}
+
+.login-form input:focus {
+  border: 2px solid #999999;
+}
+
+.login-user:hover,
+.login-user:focus,
+.password:hover,
+.password:focus {
+  color: #999999;
+}
+
+.button-login {
+
+}
+
+.restore,
+.new-registration {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus,
+.new-registration:hover,
+.new-registration:focus {
+  color: #e84d37;
+  text-decoration: underline;
+
+}
+
+/*Обратная связь*/
+.modal-feedback {
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.feedback-form {
+
+}
+
+.feedback-form h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  font-size: 16px;
+  color: #323232;
+
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  }
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border: 2px solid #999999;
+}
+
+.user-name:hover,
+.user-name:focus,
+.user-email:hover,
+.user-email:focus,
+.feedback:hover,
+.feedback:focus {
+  color: #999999;
+}
+
+.button-feedback {
+
+}
+
+/*Поиск*/
+.modal-search {
+  font-size:14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.search input[type="search"] {
+  font-size: 14px;
+  color: #323232;
+
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  }
+
+.find input:focus {
+  border: 2px solid #999999;
+}
+
+.search-find:hover,
+.search-find:focus {
+  color: #999999;
+}
