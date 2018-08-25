@@ -12,6 +12,11 @@ body {
    background-color: #849d8f;
  }
 
+.inner-page {
+
+/*Добавлиа на всякий случай*/
+}
+
  a {
   text-decoration: none;
  }
@@ -38,7 +43,7 @@ body {
 }
 
 
-/*header*/
+/*header, не могу понять как на странице  каталога  задать красный фон разделу "каталог" */
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
@@ -66,6 +71,8 @@ body {
   color: #333333;
   background-color: #f8f7f4;
 }
+
+
 
 /* Непонятно как размечать режим работы  и телефон, размер шрифта разный, может надо  кажду строчку отдельно обернуть в абзац?*/
 
@@ -165,14 +172,21 @@ body {
 
 .catalog-item:hover {
   background-color: #9bafa3; /* или лучше было в ргба записать? */
-}
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2)
+ }
 
 .item-price {
+  color: #ffffff;
   line-height: 45px
   font-weight: 700;
 }
 
+.hit-price b {
+
+}
+
 .button-item {
+  color: #ffffff;
 
 }
 
@@ -271,6 +285,102 @@ body {
 .feedback-button {
 
 }
+/*Стилизация каталога, заголовок*/
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/*Стилизация каталога, навигация*/
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ffbc9e;
+}
+
+.breadcrumbs-current {
+  text-decoration: none;
+}
+
+/*Фильтр*/
+/* Фильтры сортировки товаров и цен*/
+.filters
+.filter-items {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.filter-items label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.filter-items select:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+/*Поля ввода для фильтров типа радио и чекбокс ( Жирность и наполнители) */
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-items ul {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  list-style: none;
+  color: #e6ebe9;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #ffffff;
+}
+
+.filter-input:disabled + label {
+  /** По стайлгайду не могу понять какой цвет color: #000000;opacity: 0.5;**/
+}
+
+/*Пагинация*/
+.pagination-item {
+  list-style: none;
+  color: #ffffff;
+}
+
+.pagination-item a {
+  color: #ffffff;
+  background-color: #849d8f;
+}
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #9db1a5;
+}
+
+.pagination-item a:active {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.pagination-item-current a {
+  color: #323232;
+  background-color: #ffffff;
+}
 
 /*footer*/
 .main-footer  {
@@ -333,12 +443,13 @@ body {
 
 /*Ниже всплывающие окна*/
 .modal {
+  color: #323232;
   background-color: #f8f7f4;
 }
 
 /*Каталог*/
 .modal-menu {
-
+  color: #323232;
 }
 
 .modal-catalog {
@@ -365,6 +476,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  color: #323232;
 }
 
 .login-form input[type="text"],
@@ -412,6 +524,7 @@ body {
 .modal-feedback {
   line-height: 24px;
   font-weight: 400;
+  color: #323232;
 }
 
 .feedback-form {
@@ -475,4 +588,19 @@ body {
 .search-find:hover,
 .search-find:focus {
   color: #999999;
+}
+
+/*Товары в корзине*/
+.cart-contents {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.total-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
 }
