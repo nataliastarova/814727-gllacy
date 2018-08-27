@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -33,7 +33,7 @@
         </ul>
         <div class="time">
           <p>С 10 до 20, ежедневно
-            8 812 450-25-25
+            <b class="header-phone">8 812 450-25-25</b>
           </p>
         </div>
       </nav>
@@ -47,18 +47,18 @@
         <!-- Тут должен быть слайдер, который переключает фон -->
         <ul>
           <li class="slide">
-            <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-            <img src="/img/slide-1.png" width="533" height="441" alt="Крем-брюле и пломбир с малиновым джемом">
+            <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <img src="img/slide-1.png" width="533" height="441" alt="Крем-брюле и пломбир с малиновым джемом">
             <button class="button slide-button" type="button" id="slide-button-1">Давайте оба!</button>     <!-- Сделала списком-->
           </li>
           <li class="slide">
-            <h3>Шоколадный пломбир и лимонный сорбет</h3>
-            <img src="/img/slide-2.png" width="533" height="430" alt="Шоколадный пломбир и лимонный сорбет">
+            <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+            <img src="img/slide-2.png" width="533" height="430" alt="Шоколадный пломбир и лимонный сорбет">
             <button class="button slide-button" type="button" id="slide-button-2">Давайте оба!</button>     <!-- Тут будет кнопка -->
           </li>
           <li class="slide">
-            <h3>Пломбир с помадкой и клубничный щербет</h3>
-            <img src="/img/slide-3.png" width="540" height="427" alt="Пломбир с помадкой и клубничный щербет">
+            <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+            <img src="img/slide-3.png" width="540" height="427" alt="Пломбир с помадкой и клубничный щербет">
             <button class="button slide-button" id="slide-button-3" type="button">Давайте оба!</button>     <!-- Тут будет кнопка -->
           </li>
         </ul>
@@ -76,12 +76,12 @@
         <ul class="promo-list">
           <li class="promo-item">
             <h3 class="promo-title">Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</p>
+            <p class="promo-offer">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</p>
             <a class=" button promo-button" href="catalog.html">Хочу варенье!</a>
           </li>
           <li class="promo-item">
             <h3 class="promo-title">Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
+            <p class="promo-offer">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
             <a class="button promo-button" href="catalog.html">Хочу шоколадки!</a>
           </li>
         </ul>
@@ -92,7 +92,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="catalog-item.html">
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <h3 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               <p class="catalog-item-image">
                 <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </p>
@@ -104,7 +104,7 @@
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              <h3 class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</h3>
               <p class="catalog-item-image">
                 <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </p>
@@ -116,7 +116,7 @@
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
-              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <h3 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
               <p class="catalog-item-image">
                 <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </p>
@@ -128,7 +128,7 @@
           </li>
           <li class="catalog-item">
             <a href="catalog-item.html">
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              <h3 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h3>
               <p class="catalog-item-image">
                 <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               </p>
@@ -143,7 +143,7 @@
 
       <section class="features">
         <h2 class="visually-hidden">Особенности</h2>
-        <p>Магазин Глэйси - зто онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <p class="features-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="features-list">
           <li class="feature-item">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий </p>
@@ -184,12 +184,12 @@
         <section class="contacts">
           <h3 class="visually-hidden">Контактная информация</h3>
             <h4>Адрес главного офиса и офлайн-магазина:</h4>
-            <p>
+            <p class="contacts-address">
               <b>ул. Большая Конюшенная
             19/8, Санкт-Петербург</b>
             </p>
             <h4>Для заказов по телефону:</h4>
-            <p>
+            <p class="contacts-phone">
               <b>8 812 450-25-25</b>
             (c 10 до 20 ежедневно)
             </p>
@@ -262,7 +262,7 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <h3>Мы обязательно вам ответим!</h3>
+        <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
         <button class="modal-close" type="button">X</button>
         <p>
           <label class="visually-hidden" for="user-name-feedback">Имя</label>

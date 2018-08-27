@@ -13,12 +13,12 @@ body {
  }
 
 .inner-page {
-
-/*Добавлиа на всякий случай*/
+/*Добавила на всякий случай*/
 }
 
  a {
   text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
  }
 
 .button {
@@ -34,16 +34,22 @@ body {
 
   background-color: #ee5e3f;
   border: none;
+  border-radius: 40px;
+  box-shadow: 0 2px 2px 0 rgba(172,16,0, 0,64);
 }
 
 .button:hover,
-.button:focus,
-.button:active {
-  background-color: #f07963; /* Не понимаю как задать цвет  кнопки при нажатии*/
+.button:focus {
+  background-color: #f07963;
+  box-shadow: 0 2px 2px 0 rgba(172,16,0, 1);
 }
 
+.button:active {
+  background-color: #db5338;
+  box-shadow: inset 0 2px 2px 0 rgba(148,39,24, 1);
+}
 
-/*header, не могу понять как на странице  каталога  задать красный фон разделу "каталог" */
+/*header,*/
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
@@ -70,8 +76,34 @@ body {
 .user-navigation a:focus {
   color: #333333;
   background-color: #f8f7f4;
+  border-radius: 40px;
 }
 
+.site-navigation a:active,
+.user-navigation a:active {
+  box-shadow: inset 0 2px 1px 0 rgba(105,105,105, 1);
+}
+
+.user-navigation a,
+.main-header-logo {
+  border-bottom: none;
+}
+
+.catalog-current a {
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 40px;
+}
+
+.time p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header-phone {
+  font-size: 22px;
+  line-height: 24px;
+}
 
 
 /* Непонятно как размечать режим работы  и телефон, размер шрифта разный, может надо  кажду строчку отдельно обернуть в абзац?*/
@@ -117,8 +149,6 @@ body {
 на лекции говорили что лучше если есть фон картинки надо
 задать  обязательно цвет фона приближенный  к  фоновому изображению.
 Но в данном случае в Глэйси в промо-акциях кмк  можно обойтись без этого, или нет?*/
-.promo {
-}
 
 .promo-list {
   list-style: none;
@@ -127,30 +157,27 @@ body {
 .promo-title {
   font-size: 35px;
   line-height: 41px;
+  font-weight: 400;
 }
 
-.promo-item {
+.promo-offer{
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
 }
 
 .promo-item:first-child {
   background-image: url("../img/banner-1.jpg");
+  background-color: #a82145;
 }
 
 .promo-item:last-child {
   background-image: url("../img/banner-2.jpg");
+  background-color: #553324;
 }
 
-.promo-button {
-
-}
 
 /*Каталог товаров*/
-.catalog {
-
-}
-
 .catalog-list {
   list-style: none;
 }
@@ -159,30 +186,33 @@ body {
   color: #ffffff;
 }
 
-.catalog-list a:hover,
-.catalog-list a:focus {
-  color: #ffbc9e;
-}
-
 .catalog-item {
-  font-weight: 500;
-  text-align: center;
+    text-align: center;
 /* надо будет добавить url("../img/hit.svg"); но пока не поняла как*/
 }
 
 .catalog-item:hover {
-  background-color: #9bafa3; /* или лучше было в ргба записать? */
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2)
+  background-color: #9bafa3;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
  }
 
-.item-price {
-  color: #ffffff;
-  line-height: 45px
-  font-weight: 700;
+.catalog-item-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+
 }
 
-.hit-price b {
+.item-price b {
+  font-size: 45px;
+  line-height: 45px;
+}
 
+.item-price span {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
 }
 
 .button-item {
@@ -197,7 +227,7 @@ body {
   background-image: url("../img/pattern.jpg");
  }
 
-.features p:nth-child(2) { /* Если честно, подобрала значение nth-child методом перебора, не мог бы объяснить почему тут именно 2? */
+.features-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -207,13 +237,7 @@ body {
   list-style: none;
  }
 
- /*Здесь надо будет добавить иконки к абзацам*/
- .feature-item {
-
- }
-
  /*Article Новости*/
-
  .news {
    color: #323232;
    background-color: #ffffff;
@@ -262,10 +286,6 @@ body {
 }
 
 /*Карта и контакты*/
-.map {
-
-}
-
 .contacts {
   color: #323232;
   background-color: #ffffff;
@@ -277,15 +297,21 @@ body {
   font-weight: 400;
 }
 
-.contacts b {
+.contacts-address {
   font-size: 18px;
   line-height: 24px;
 }
 
-.feedback-button {
-
+.contacts-phone {
+  font-size: 14px;
+  line-height: 22px;
 }
-/*Стилизация каталога, заголовок*/
+
+.contacts-phone b {
+  font-size: 18px;
+}
+
+/*Стилизация каталога товаров, заголовок*/
 .page-title {
   font-size: 35px;
   line-height: 41px;
@@ -295,11 +321,14 @@ body {
 
 /*Стилизация каталога, навигация*/
 .breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
   list-style: none;
 }
 .breadcrumbs a {
   color: #ffffff;
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(0, 0, 0, 0,2);
 }
 
 .breadcrumbs a:hover,
@@ -308,27 +337,33 @@ body {
 }
 
 .breadcrumbs-current {
-  text-decoration: none;
+
 }
 
 /*Фильтр*/
 /* Фильтры сортировки товаров и цен*/
-.filters
+
 .filter-items {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
+
 }
 .filter-items label {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 16px;
   font-weight: 500;
   color: #ffffff;
 }
 
+.filter-items select {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #9db1a5;
+
+}
 .filter-items select:hover {
   color: #323232;
-  background-color: #ffffff;
+  background-color: #9db1a5;
 }
 /*Поля ввода для фильтров типа радио и чекбокс ( Жирность и наполнители) */
 .filters fieldset {
@@ -354,18 +389,49 @@ body {
 }
 
 .filter-input:disabled + label {
-  /** По стайлгайду не могу понять какой цвет color: #000000;opacity: 0.5;**/
+  /** По стайлгайду не могу понять какой цвет*/
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #9cb0a4;
+  border: 2px solid #fbfcfb;
+}
+
+.filter-button:hover {
+  font-size: 16px;
+  line-height: 18px;
+  color: #323232;
+  background-color: #fbfcfb;
+  border: none;
+  box-shadow: none;
+}
+
+.filter-button:focus {
+  font-size: 16px;
+  line-height: 18px;
+  color: #323232;
+  background-color: #eaeaea;
+  border: none;
+  box-shadow: inset 0 2px 1px 0 rgba(105,105,105, 1);
 }
 
 /*Пагинация*/
+.pagination a {
+  border-bottom: none;
+}
 .pagination-item {
   list-style: none;
   color: #ffffff;
+  border-bottom: none;
 }
 
 .pagination-item a {
   color: #ffffff;
   background-color: #849d8f;
+
 }
 .pagination-item a:hover,
 .pagination-item a:focus {
@@ -398,7 +464,8 @@ body {
 }
 
 /*Соц. сети*/
-.footer-social {
+.footer-social a {
+  border-bottom: none;
 
 }
 
@@ -436,6 +503,10 @@ body {
   text-align: center;
 }
 
+.copyright-logo {
+  border-bottom: none;
+}
+
 .copyright-info a:hover,
 .copyright-info a:focus {
   color: #ffbc9e;
@@ -445,6 +516,8 @@ body {
 .modal {
   color: #323232;
   background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+ }
 }
 
 /*Каталог*/
@@ -479,9 +552,9 @@ body {
   color: #323232;
 }
 
-.login-form input[type="text"],
+.login-form input[type="email"],
 .login-form input[type="password"] {
-  font:inherit;
+  font: inherit;
   color: #323232;
 
   background-color: #ffffff;
@@ -497,10 +570,6 @@ body {
 .password:hover,
 .password:focus {
   color: #999999;
-}
-
-.button-login {
-
 }
 
 .restore,
@@ -525,10 +594,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #323232;
-}
-
-.feedback-form {
-
 }
 
 .feedback-form h3 {
@@ -573,13 +638,13 @@ body {
   font-weight: 400;
 }
 
-.search input[type="search"] {
-  font-size: 14px;
+.find input[type="search"] {
+  font: inherit;
   color: #323232;
 
   background-color: #ffffff;
   border: 1px solid #999999;
-  }
+}
 
 .find input:focus {
   border: 2px solid #999999;
@@ -597,6 +662,10 @@ body {
   font-weight: 400;
   color: #323232;
   background-color: #f8f7f4;
+}
+
+.cart-price {
+  color: #9f9f9f;
 }
 
 .total-price {
