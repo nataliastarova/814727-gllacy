@@ -11,29 +11,33 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="104" height="41" alt="Логотип магазина Глэйси">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
         </a>
-        <ul class="site-navigation">
-          <li class="catalog catalog-current">
-            <a href="catalog.html">Каталог</a>
-          </li>
-          <li><a href="delivery.html">Доставка и оплата</a></li>
-          <li><a href="info.html">О нас</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="search"> <!-- Форма поиска, делала по аналогии с входом, не увеена что правильно -->
-            <a href="search.html">Поиск</a>
-          </li>
-          <li class="login-link">
-            <a href="login.html">Вход</a><!-- Форма входа, размечена внизу -->
-          </li>
-          <li class="user-navigation-cart"> <!--Тут надо изменить количество товаров, пока не знаю как. Сделала как ссылку на отдельную страницу-->
-            <a href="#">2 товара</a>
-          </li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <ul class="site-navigation">
+              <li class="catalog">
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li><a href="delivery.html">Доставка и оплата</a></li>
+              <li><a href="info.html">О Компании</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li class="search"> <!-- Форма поиска -->
+                <a href="search.html">Поиск</a>
+              </li>
+              <li class="login-link">
+                <a href="login.html">Вход</a><!-- Форма входа, размечена внизу -->
+              </li>
+              <li class="user-navigation-cart">
+                <a href="#">Пусто</a> <!-- Сделала как ссылку на отдельную страницу-->
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="time">
           <p>С 10 до 20, ежедневно
-            <b class="phone">8 812 450-25-25</b>
+            <b class="header-phone">8 812 450-25-25</b>
           </p>
         </div>
       </nav>

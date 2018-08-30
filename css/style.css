@@ -35,7 +35,7 @@ body {
   background-color: #ee5e3f;
   border: none;
   border-radius: 40px;
-  box-shadow: 0 2px 2px 0 rgba(172,16,0, 0,64);
+  box-shadow: 0 2px 2px 0 rgba(172,16,0, 0.64);
 }
 
 .button:hover,
@@ -145,11 +145,6 @@ body {
 }
 
 /*Промо-акции*/
-/*Тут у каждой акции своя  фоновая картинка,
-на лекции говорили что лучше если есть фон картинки надо
-задать  обязательно цвет фона приближенный  к  фоновому изображению.
-Но в данном случае в Глэйси в промо-акциях кмк  можно обойтись без этого, или нет?*/
-
 .promo-list {
   list-style: none;
 }
@@ -166,12 +161,12 @@ body {
   font-weight: 700;
 }
 
-.promo-item:first-child {
+.raspberry {
   background-image: url("../img/banner-1.jpg");
   background-color: #a82145;
 }
 
-.promo-item:last-child {
+.chocolate {
   background-image: url("../img/banner-2.jpg");
   background-color: #553324;
 }
@@ -188,7 +183,7 @@ body {
 
 .catalog-item {
     text-align: center;
-/* надо будет добавить url("../img/hit.svg"); но пока не поняла как*/
+
 }
 
 .catalog-item:hover {
@@ -252,7 +247,7 @@ body {
    text-decoration: underline;
  }
 
-/*Article Новости*/
+/* Рассылка*/
 .subscription {
   color: #5a5a5a;
   background-color: #f8f7f4;
@@ -328,7 +323,7 @@ body {
 }
 .breadcrumbs a {
   color: #ffffff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0,2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .breadcrumbs a:hover,
@@ -398,6 +393,7 @@ body {
 
   background-color: #9cb0a4;
   border: 2px solid #fbfcfb;
+  box-shadow: none;
 }
 
 .filter-button:hover {
@@ -479,7 +475,7 @@ body {
 }
 
 .social-button:hover,
-.social-button:focus,  {
+.social-button:focus {
 
 }
 
@@ -518,7 +514,6 @@ body {
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
  }
-}
 
 /*Каталог*/
 .modal-menu {
@@ -673,3 +668,93 @@ body {
   line-height: 18px;
   font-weight: 700;
 }
+
+/*----Cеточные стили----*/
+
+html,
+body {
+  min-width: 1146px;
+  min-height: 1750px;
+}
+
+.main-header {
+  padding-top: 9px;
+
+  /* Временно для сетки */
+  min-height: 108px;
+  outline: 12px dashed orange;
+}
+
+.main-navigation {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*align-items: center;*/
+  /* Временно для сетки  высота такая же как у  мэйн хэлэра так как вложен в него*/
+  min-height: 108px;
+  outline: 5px solid yellow;
+}
+
+.main-navigation-wrapper {
+  min-width: 1146px;
+  display: flex;
+
+  outline: 5px solid magenta;
+}
+
+.container-wrapper {
+  width: 940px;
+  margin-left: 23px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  outline: 5px solid green;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+  /* display: block;*/
+  /* Временно для сетки */
+  outline: 1px solid #a82145;
+
+}
+
+.site-navigation {
+  width: 383px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 70px;
+  outline: 1px solid #a82145;
+
+}
+
+.user-navigation {
+  width: 267px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 70px;
+  outline: 1px solid #a82145;
+
+}
+
+.time {
+  width: 170px;
+
+  align-self: flex-end;
+
+  /* Временно для сетки */
+  min-height: 42px;
+  outline: 1px solid #a82145;
+}
+
