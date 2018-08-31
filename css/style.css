@@ -674,10 +674,17 @@ body {
 html,
 body {
   min-width: 1146px;
-  min-height: 1750px;
+  min-height: 2000px;
+}
+
+.inner-page {
+  width: 1146px;
+  margin: 0 auto;
 }
 
 .main-header {
+  width: 1146px;
+  margin: 0 auto;
   padding-top: 9px;
 
   /* Временно для сетки */
@@ -688,7 +695,6 @@ body {
 .main-navigation {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   /*align-items: center;*/
   /* Временно для сетки  высота такая же как у  мэйн хэлэра так как вложен в него*/
   min-height: 108px;
@@ -704,8 +710,8 @@ body {
 
 .container-wrapper {
   width: 970px;
-  margin-left: 23px;
 
+  margin-left: 23px;
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
@@ -756,6 +762,8 @@ body {
 
 /* Main */
 .container {
+  width:1146px;
+  margin:0 auto;
   /* Временно для сетки */
   outline: 5px solid blue;
 }
@@ -870,7 +878,6 @@ body {
 }
 
 .map {
-
   outline: 5px solid green;
 
   width: 1200px;
@@ -927,6 +934,46 @@ body {
 }
 
 
-.footer {
-    margin-top: 30px;
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  width:1146px;
+  margin:0 auto;
+  margin-top: 30px;
+  padding: 20px 0;
+
+  min-height: 108px;
+  outline: 5px solid magenta;
+}
+
+.footer-social {
+  width: 188px;
+  padding: 0;
+  
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 100px;
+  outline: 2px solid #a82145;
+}
+
+.footer-info {
+  width: 310px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 100px;
+  outline: 2px solid #a82145;
+}
+
+.footer-copyright {
+  width: 192px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 100px;
+  outline: 2px solid #a82145;
 }
