@@ -10,11 +10,11 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
-        </a>
         <div class="main-navigation-wrapper">
-          <div class="container">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
+          </a>
+          <div class="container-wrapper">
             <ul class="site-navigation">
               <li class="catalog">
                 <a href="catalog.html">Каталог</a>
@@ -34,11 +34,11 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="time">
-          <p>С 10 до 20, ежедневно
-            <b class="header-phone">8 812 450-25-25</b>
-          </p>
+          <div class="time">
+            <p>С 10 до 20, ежедневно
+              <b class="header-phone">8 812 450-25-25</b>
+            </p>
+          </div>
         </div>
       </nav>
     </header>
@@ -283,24 +283,26 @@
 
           <section class="pagination">
             <h3 class="visually-hidden">Страницы каталога</h3>
-            <a class="catalog-link back-page-link catalog-link-current" aria-label="Вернуться назад">Назад</a>
-            <ul class="pagination-list">
-              <li class="pagination-item pagination-item-current">
-                <a aria-label="Первая страница каталога">1</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" aria-label="Вторая страница каталога">2</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" aria-label="Третья страница каталога">3</a></li>
-              <li class="pagination-item">
-                <a href="#" aria-label="Четвертая страница каталога">4</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" aria-label="Пятая страница каталога">5</a>
-              </li>
-            </ul>
-            <a class="catalog-link next-page-link" aria-label="Следующая страница">Вперед</a>
+            <div class="pagination-wrapper">
+              <a class="catalog-link back-page-link catalog-link-current" aria-label="Вернуться назад">Назад</a>
+              <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current">
+                  <a aria-label="Первая страница каталога">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" aria-label="Вторая страница каталога">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" aria-label="Третья страница каталога">3</a></li>
+                <li class="pagination-item">
+                  <a href="#" aria-label="Четвертая страница каталога">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" aria-label="Пятая страница каталога">5</a>
+                </li>
+              </ul>
+              <a class="catalog-link next-page-link" aria-label="Следующая страница">Вперед</a>
+            </div>
           </section>
         </section>
     </main>
