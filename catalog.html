@@ -56,80 +56,82 @@
 
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-            <div class="filter-items">
-              <label for="filter-features">Сортировка:</label>
-              <select id="filter-features" name="food">
-                <option value="popular">По популярности</option>
-                <option value="low-price-first">Сначала недорогие</option>
-                <option value="high-price-first">Сначала дорогие</option>
-                <option value="fat">По жирности</option>
-              </select>
-            </div>
-
-            <div class="filter-items">
-               <label>Цена: 100 руб. - 500 руб.</label>
-              <div class="min">
-                <!--Миннимальное значение-->
+          <div class="filter-wrapper">
+            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+              <div class="filter-items">
+                <label for="filter-features">Сортировка:</label>
+                <select id="filter-features" name="food">
+                  <option value="popular">По популярности</option>
+                  <option value="low-price-first">Сначала недорогие</option>
+                  <option value="high-price-first">Сначала дорогие</option>
+                  <option value="fat">По жирности</option>
+                </select>
               </div>
-              <div class="max">
-                  <!--Максимальное значение-->
+
+              <div class="filter-items">
+                 <label>Цена: 100 руб. - 500 руб.</label>
+                <div class="min">
+                  <!--Миннимальное значение-->
+                </div>
+                <div class="max">
+                    <!--Максимальное значение-->
+                </div>
+                <div class="range">
+                  <!--Черта-палка диапазона-->
+                </div>
               </div>
-              <div class="range">
-                <!--Черта-палка диапазона-->
-              </div>
-            </div>
 
-            <fieldset class="filter-items">
-              <legend>Жирность:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="zero-fat" id="zero">
-                  <label for="zero">0%</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="<10-fat" id="ten">
-                  <label for="ten">до 10%</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="<30-fat" id="thirty">
-                  <label for="thirty">до 30%</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value=">30-fat" id="more-thirty">
-                  <label for="more-thirty">выше 30%</label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="filter-items">
+                <legend>Жирность:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="zero-fat" id="zero">
+                    <label for="zero">0%</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="<10-fat" id="ten">
+                    <label for="ten">до 10%</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="<30-fat" id="thirty">
+                    <label for="thirty">до 30%</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value=">30-fat" id="more-thirty">
+                    <label for="more-thirty">выше 30%</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter-items">
-              <legend>Наполнители:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chokolate" id="filter-chokolate" checked>
-                  <label for="filter-chokolate">Шоколадные</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="shugar-powder" id="filter-shugar-powder" checked>
-                  <label for="filter-shugar-powder">Сахарные присыпки</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
-                  <label for="filter-fruit">Фрукты</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups" id="filter-syrups">
-                  <label for="filter-syrups">Сиропы</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams" id="filter-jams">
-                  <label for="filter-jams">Джемы</label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="filter-items">
+                <legend>Наполнители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chokolate" id="filter-chokolate" checked>
+                    <label for="filter-chokolate">Шоколадные</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="shugar-powder" id="filter-shugar-powder" checked>
+                    <label for="filter-shugar-powder">Сахарные присыпки</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
+                    <label for="filter-fruit">Фрукты</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups" id="filter-syrups">
+                    <label for="filter-syrups">Сиропы</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams" id="filter-jams">
+                    <label for="filter-jams">Джемы</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <button type="submit" class="button filter-button">Применить</button>
-          </form>
+              <button type="submit" class="button filter-button">Применить</button>
+            </form>
+          </div>
         </section>
 
         <section class="catalog">

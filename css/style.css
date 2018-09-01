@@ -949,7 +949,7 @@ body {
 .footer-social {
   width: 188px;
   padding: 0;
-  
+
   list-style: none;
   /* Временно для сетки */
   min-height: 100px;
@@ -977,3 +977,61 @@ body {
   min-height: 100px;
   outline: 2px solid #a82145;
 }
+
+/*Сетка каталога*/
+
+.breadcrumbs {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+
+  /* Временно для сетки */
+  min-height: 17px;
+  outline: 2px solid #a82145;
+}
+
+.breadcrumbs li {
+  padding-right: 20px;
+}
+
+.page-title {
+  width: 384px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+  /* Временно для сетки */
+  min-height: 41px;
+  outline: 2px solid #a82145;
+}
+
+.filters {
+  margin-bottom: 40px;
+  /* Временно для сетки */
+  min-height: 136px;
+  outline: 2px solid #a82145;
+}
+
+.filter-wrapper {
+  width: 862px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+  /* Временно для сетки */
+  min-height: 136px;
+  outline: 2px dotted green;
+}
+
+.filter-items {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  outline: 2px solid #a82145;
+}
+
