@@ -89,7 +89,7 @@ body {
   border-bottom: none;
 }
 
-.catalog-current a {
+.catalog-link-current a {
   color: #ffffff;
   background-color: #d07058;
   border-radius: 40px;
@@ -682,6 +682,11 @@ body {
   margin: 0 auto;
 }
 
+.page-wrapper {
+  width: 1146px; /*Или нао бвло ему задать 1200px?*/
+  margin: 0 auto;
+
+}
 .main-header {
   width: 1146px;
   margin: 0 auto;
@@ -693,30 +698,26 @@ body {
 }
 
 .main-navigation {
+  width: 1146px;
+  height:104px;
+
   display: flex;
   flex-direction: column;
+
   /*align-items: center;*/
   /* Временно для сетки  высота такая же как у  мэйн хэлэра так как вложен в него*/
-  min-height: 108px;
+
   outline: 5px solid yellow;
 }
 
 .main-navigation-wrapper {
   min-width: 1146px;
+  height:104px;
+
   display: flex;
+
 
   outline: 5px solid magenta;
-}
-
-.container-wrapper {
-  width: 970px;
-
-  margin-left: 23px;
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-
-  outline: 5px solid green;
 }
 
 .main-header-logo {
@@ -725,39 +726,135 @@ body {
   /* display: block;*/
   /* Временно для сетки */
   outline: 1px solid #a82145;
+}
 
+.container-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  width: 970px;
+  height: 34px;
+
+  margin: 0;
+  margin-left: 23px;
+  margin-top: 14px;
+  padding:0;
+
+  outline: 5px solid green;
 }
 
 .site-navigation {
+  display: flex;
+  align-self: flex-end;
+
+
   width: 383px;
+  height: 34px;
+
   margin: 0;
+  margin-right: 320px;
   padding: 0;
+
 
   list-style: none;
   /* Временно для сетки */
-  min-height: 70px;
+
+
   outline: 1px solid #a82145;
 }
 
+.catalog-link {
+  width: 65px;
+  height: 34px;
+
+  padding: 0;
+  margin: 0;
+  margin-right: 25px;
+
+}
+
+.delivery {
+  width: 142px;
+  height: 34px;
+
+  padding: 0;
+  margin: 0;
+  margin-right: 27px;
+}
+
+.info {
+  width: 95px;
+  height: 34px;
+
+  padding: 0;
+  margin: 0;
+
+}
 .user-navigation {
+  display: flex;
+  align-self: flex-end;
+
   width: 267px;
+  height: 34px;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
   /* Временно для сетки */
-  min-height: 70px;
   outline: 1px solid #a82145;
+}
+
+.search {
+  width: 54px;
+  height: 34px;
+
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.login-link {
+  width: 94px;
+  height: 34px;
+
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.user-navigation-cart {
+  width: 99px;
+  height: 34px;
+  padding: 0;
+  margin: 0;
 }
 
 .time {
-  width: 170px;
+  box-sizing: border-box;
 
+  display: flex;
+  flex-wrap: wrap;
   align-self: flex-end;
 
+  width: 170px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
   /* Временно для сетки */
-  min-height: 42px;
+  min-height: 40px;
   outline: 1px solid #a82145;
+}
+
+.time p {
+  width: 170px;
+  
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 /* Main */
@@ -830,6 +927,7 @@ body {
   margin-bottom: 40px;
   outline: 5px dotted green;
   padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .features-list {
@@ -843,11 +941,13 @@ body {
 }
 
 .feature-item {
-  width: 560px;
+  width: 504px;
+  box-sizing: border-box;
 
   margin-bottom: 15px;
   margin-right: 26px;
   padding-left: 56px;
+
 
   min-height: 66px;
   outline: 2px solid #a82145;
@@ -878,39 +978,50 @@ body {
 }
 
 .map {
+  min-height: 900px;
   outline: 5px solid green;
 
   width: 1200px;
   height: 430px;
   background-image: url(../img/map.jpg);
   margin: 0 auto;
-  margin-bottom: 18px;
-  position: relative;
+  /*position: relative;*/
 }
 
 .map-wrapper {
   width: 1200px;
   height: 430px;
   background-image: url(../img/map.jpg);
+
   margin: 0 auto;
-  margin-bottom: 18px;
-  position: relative;
+  margin-bottom: 38px;
+
+
+  /*position: relative;*/
   outline: 2px solid #a82145;
+  min-height: 900px;
 }
 
 .contacts {
-  border-radius: 15px;
   width: 302px;
-  position: absolute;
+  border-radius: 15px;
+
+  min-height: 308px;
+
+  /*position: absolute;
   top: 63px;
-  right: 27px;
+  right: 27px;*/
 }
 
 .pagination {
   display: flex;
   justify-content: flex-end;
+
+  margin-bottom: 38px;
+
   outline: 5px solid green;
  }
+
 .pagination-wrapper {
   display: flex;
 
@@ -921,7 +1032,6 @@ body {
 }
 
 .pagination-list {
-
   margin-left: 15px;
   margin-right: 20px;
   padding: 0;
@@ -937,9 +1047,11 @@ body {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+
   width:1146px;
   margin:0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 20px 0;
 
   min-height: 108px;
@@ -947,37 +1059,107 @@ body {
 }
 
 .footer-social {
-  width: 188px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 200px;
   padding: 0;
 
   list-style: none;
   /* Временно для сетки */
-  min-height: 100px;
+  min-height: 40px;
   outline: 2px solid #a82145;
+}
+.footer-social-list {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+
+  list-style: none;
+}
+
+.social-button {
+  width: 40px;
+  height: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  outline: 2px dashed #a82145;
 }
 
 .footer-info {
-  width: 310px;
+  width: 340px;
+  height: 40px;
   margin: 0;
   padding: 0;
 
   list-style: none;
   /* Временно для сетки */
-  min-height: 100px;
+
   outline: 2px solid #a82145;
+}
+
+.footer-info-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 340px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  min-height: 40px;
+  outline: 2px dashed #a82145;
+}
+
+.footer-info-list li {
+  box-sizing: border-box;
+
+  width: 170px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  outline: 2px dashed #a82145;
+}
+
+.footer-info-list li:nth-child(odd) {
+  padding-left: 30px;
 }
 
 .footer-copyright {
-  width: 192px;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 190px;
   margin: 0;
   padding: 0;
 
   list-style: none;
   /* Временно для сетки */
-  min-height: 100px;
+  min-height: 60px;
   outline: 2px solid #a82145;
 }
 
+.copyright-logo {
+  width: 108px;
+  height: 39px;
+}
+
+.copyright-info {
+  width: 190px;
+  height: 20px;
+
+  margin: 0;
+  padding: 0;
+}
 /*Сетка каталога*/
 
 .breadcrumbs {
