@@ -712,7 +712,7 @@ body {
 
 .main-navigation-wrapper {
   min-width: 1146px;
-  height:104px;
+  height:64px;
 
   display: flex;
 
@@ -737,7 +737,7 @@ body {
 
   margin: 0;
   margin-left: 23px;
-  margin-top: 14px;
+  margin-top: 20px;
   padding:0;
 
   outline: 5px solid green;
@@ -838,24 +838,43 @@ body {
   flex-wrap: wrap;
   align-self: flex-end;
 
-  width: 170px;
+  width: 175px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   /* Временно для сетки */
-  min-height: 40px;
+  height: 40px;
   outline: 1px solid #a82145;
 }
 
 .time p {
-  width: 170px;
-  
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
 
+  width: 175px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
+
+.header-phone {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 175px;
+  height: 24px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+
+}
+
 
 /* Main */
 .container {
