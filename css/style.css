@@ -1189,7 +1189,7 @@ body {
   margin-bottom: 10px;
 
   /* Временно для сетки */
-  min-height: 17px;
+  height: 17px;
   outline: 2px solid #a82145;
 }
 
@@ -1210,29 +1210,118 @@ body {
 .filters {
   margin-bottom: 40px;
   /* Временно для сетки */
-  min-height: 136px;
+  min-height: 132px;
   outline: 2px solid #a82145;
 }
 
-.filter-wrapper {
-  width: 862px;
+.filter-form {
+  width: 879px;
+  height: 132px;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
 
   padding: 0;
   margin: 0;
+
+  list-style: none;
   /* Временно для сетки */
   min-height: 136px;
   outline: 2px dotted green;
 }
 
-.filter-items {
+.filter-items label,
+.filter-items legend {
+  padding-left: 11px;
+}
+
+.filter-sorting {
+  display: flex;
+  flex-direction: column;
+
+  width: 194px;
+  height: 58px;
   padding: 0;
   margin: 0;
+  margin-right: 14px;
 
   list-style: none;
   outline: 2px solid #a82145;
 }
 
+.filter-price {
+  display: flex;
+  flex-direction: column;
+
+  width: 221px;
+  height: 58px;
+  padding: 0;
+  margin: 0;
+  margin-right: 14px;
+
+  list-style: none;
+  outline: 2px solid #a82145;
+}
+
+.filter-fat {
+  display: flex;
+  flex-direction: column;
+
+  width: 416px;
+  height: 58px;
+  padding: 0;
+  margin: 0;
+  margin-right: 13px;
+
+  list-style: none;
+  outline: 2px solid #a82145;
+}
+
+.filter-fat-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 418px;
+  height: 42px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  outline: 1px solid skyblue;
+}
+
+.filter-filler {
+  display: flex;
+  flex-direction: column;
+
+  width: 702px;
+  height: 58px;
+  padding: 0;
+  margin: 0;
+  margin-right: 14px;
+
+  list-style: none;
+  outline: 2px solid #a82145;
+}
+
+.filter-filler-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 702px;
+  height: 42px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  outline: 1px solid skyblue;
+}
+
+.filter-button {
+  width: 145px;
+  height: 42px;
+  margin-right: 14px;
+}

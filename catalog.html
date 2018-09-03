@@ -61,9 +61,8 @@
 
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <div class="filter-wrapper">
-              <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-                <div class="filter-items">
+            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+                <div class="filter-items filter-sorting">
                   <label for="filter-features">Сортировка:</label>
                   <select id="filter-features" name="food">
                     <option value="popular">По популярности</option>
@@ -73,7 +72,7 @@
                   </select>
                 </div>
 
-                <div class="filter-items">
+                <div class="filter-items filter-price">
                    <label>Цена: 100 руб. - 500 руб.</label>
                   <div class="min">
                     <!--Миннимальное значение-->
@@ -86,9 +85,9 @@
                   </div>
                 </div>
 
-                <fieldset class="filter-items">
+                <fieldset class="filter-items filter-fat">
                   <legend>Жирность:</legend>
-                  <ul>
+                  <ul class="filter-fat-list">
                     <li class="filter-option">
                       <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="zero-fat" id="zero">
                       <label for="zero">0%</label>
@@ -108,9 +107,9 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="filter-items">
+                <fieldset class="filter-items filter-filler">
                   <legend>Наполнители:</legend>
-                  <ul>
+                  <ul class="filter-filler-list">
                     <li class="filter-option">
                       <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chokolate" id="filter-chokolate" checked>
                       <label for="filter-chokolate">Шоколадные</label>
@@ -136,7 +135,6 @@
 
                 <button type="submit" class="button filter-button">Применить</button>
               </form>
-            </div>
           </section>
 
           <section class="catalog">
