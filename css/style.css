@@ -187,7 +187,8 @@ body {
 }
 
 .catalog-item:hover {
-  background-color: #9bafa3;
+  background-color: #849d8f;
+  background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
  }
 
@@ -265,6 +266,7 @@ body {
 
   background-color: #ffffff;
   border: 1px solid #999999;
+  border-radius: 4px;
 }
 .subscribe  input:focus{
   border: 2px solid #999999;
@@ -528,6 +530,7 @@ body {
 
 .modal-catalog li:first-child {
   font-weight: 700;
+   border-bottom: 1px solid #d1d0ce;
 }
 
 .modal-catalog a:hover,
@@ -554,6 +557,7 @@ body {
 
   background-color: #ffffff;
   border: 1px solid #999999;
+  border-radius: 4px;
 }
 
 .login-form input:focus {
@@ -606,6 +610,7 @@ body {
 
   background-color: #ffffff;
   border: 1px solid #999999;
+  border-radius: 4px;
   }
 
 .feedback-form input:focus,
@@ -639,6 +644,7 @@ body {
 
   background-color: #ffffff;
   border: 1px solid #999999;
+  border-radius: 4px;
 }
 
 .find input:focus {
@@ -657,6 +663,7 @@ body {
   font-weight: 400;
   color: #323232;
   background-color: #f8f7f4;
+  border-radius: 6px;
 }
 
 .cart-price {
@@ -699,7 +706,7 @@ body {
 
 .main-navigation {
   width: 1146px;
-  height:104px;
+
 
   display: flex;
   flex-direction: column;
@@ -712,7 +719,6 @@ body {
 
 .main-navigation-wrapper {
   min-width: 1146px;
-  height:64px;
 
   display: flex;
 
@@ -730,10 +736,10 @@ body {
 
 .container-wrapper {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 
   width: 970px;
-  height: 34px;
+
 
   margin: 0;
   margin-left: 23px;
@@ -745,11 +751,10 @@ body {
 
 .site-navigation {
   display: flex;
-  align-self: flex-end;
+  align-items: flex-start;
 
 
   width: 383px;
-  height: 34px;
 
   margin: 0;
   margin-right: 320px;
@@ -765,7 +770,7 @@ body {
 
 .catalog-link {
   width: 65px;
-  height: 34px;
+
 
   padding: 0;
   margin: 0;
@@ -775,7 +780,7 @@ body {
 
 .delivery {
   width: 142px;
-  height: 34px;
+
 
   padding: 0;
   margin: 0;
@@ -784,7 +789,7 @@ body {
 
 .info {
   width: 95px;
-  height: 34px;
+
 
   padding: 0;
   margin: 0;
@@ -792,10 +797,10 @@ body {
 }
 .user-navigation {
   display: flex;
-  align-self: flex-end;
+  align-self: flex-start;
 
   width: 267px;
-  height: 34px;
+
 
   margin: 0;
   padding: 0;
@@ -807,7 +812,7 @@ body {
 
 .search {
   width: 54px;
-  height: 34px;
+
 
   margin: 0;
   margin-right: 10px;
@@ -817,7 +822,6 @@ body {
 
 .login-link {
   width: 94px;
-  height: 34px;
 
   padding: 0;
   margin: 0;
@@ -826,9 +830,17 @@ body {
 
 .user-navigation-cart {
   width: 99px;
-  height: 34px;
+
   padding: 0;
   margin: 0;
+}
+
+.full-cart {
+  width: 119px;
+
+  padding: 0;
+  margin: 0;
+
 }
 
 .time {
@@ -845,7 +857,7 @@ body {
   list-style: none;
 
   /* Временно для сетки */
-  height: 40px;
+
   outline: 1px solid #a82145;
 }
 
@@ -855,7 +867,7 @@ body {
   flex-wrap: wrap;
 
   width: 175px;
-  height: 40px;
+
   margin: 0;
   padding: 0;
 
@@ -867,7 +879,7 @@ body {
   justify-content: flex-end;
 
   width: 175px;
-  height: 24px;
+
 
   margin: 0;
   padding: 0;
@@ -882,6 +894,7 @@ body {
   margin:0 auto;
   /* Временно для сетки */
   outline: 5px solid blue;
+  min-height: 4360px;
 }
 
 .promo {
@@ -933,7 +946,7 @@ body {
   margin-right: 26px;
   margin-bottom: 40px;
 
-  min-height: 325px;
+
   outline: 2px solid #a82145;
   background-color: transparent;
 }
@@ -968,7 +981,7 @@ body {
   padding-left: 56px;
 
 
-  min-height: 66px;
+
   outline: 2px solid #a82145;
   background-color: transparent
 }
@@ -976,10 +989,11 @@ body {
 
 .index-columns {
   display: flex;
+  width: 1146px;
 
   margin-bottom: 40px;
 
-  min-height: 222px;
+
   outline: 5px solid green;
 }
 
@@ -997,11 +1011,10 @@ body {
 }
 
 .map {
-  min-height: 900px;
-  outline: 5px solid green;
-
   width: 1200px;
   height: 430px;
+  outline: 5px solid green;
+
   background-image: url(../img/map.jpg);
   margin: 0 auto;
   /*position: relative;*/
@@ -1010,22 +1023,22 @@ body {
 .map-wrapper {
   width: 1200px;
   height: 430px;
+
   background-image: url(../img/map.jpg);
 
   margin: 0 auto;
   margin-bottom: 38px;
 
-
   /*position: relative;*/
   outline: 2px solid #a82145;
-  min-height: 900px;
+
 }
 
 .contacts {
   width: 302px;
   border-radius: 15px;
 
-  min-height: 308px;
+
 
   /*position: absolute;
   top: 63px;
@@ -1045,7 +1058,6 @@ body {
   display: flex;
 
   width: 190px;
-  height: 32px;
 
   outline: 5px solid orange;
 }
@@ -1059,7 +1071,7 @@ body {
 
   outline: 2px solid #a82145;
   /* Временно для сетки */
-  min-height: 47px;
+
 }
 
 
@@ -1070,29 +1082,30 @@ body {
 
   width:1146px;
   margin:0 auto;
-  margin-top: 20px;
+  margin-top: 300px; /*Почему-то футер залезает на мэйн, временный маргин потом за меню на 20px*/
   padding: 20px 0;
 
-  min-height: 108px;
+
   outline: 5px solid magenta;
 }
 
 .footer-social {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
   width: 200px;
   padding: 0;
 
   list-style: none;
   /* Временно для сетки */
-  min-height: 40px;
+
   outline: 2px solid #a82145;
 }
 .footer-social-list {
   display: flex;
   width: 200px;
-  height: 40px;
+
   margin: 0;
   padding: 0;
   padding-right: 10px;
@@ -1112,7 +1125,6 @@ body {
 
 .footer-info {
   width: 340px;
-  height: 40px;
   margin: 0;
   padding: 0;
 
@@ -1132,7 +1144,7 @@ body {
 
   list-style: none;
 
-  min-height: 40px;
+
   outline: 2px dashed #a82145;
 }
 
@@ -1140,7 +1152,7 @@ body {
   box-sizing: border-box;
 
   width: 170px;
-  height: 18px;
+
   margin: 0;
   padding: 0;
 
@@ -1163,7 +1175,7 @@ body {
 
   list-style: none;
   /* Временно для сетки */
-  min-height: 60px;
+
   outline: 2px solid #a82145;
 }
 
@@ -1174,7 +1186,6 @@ body {
 
 .copyright-info {
   width: 190px;
-  height: 20px;
 
   margin: 0;
   padding: 0;
@@ -1189,7 +1200,6 @@ body {
   margin-bottom: 10px;
 
   /* Временно для сетки */
-  height: 17px;
   outline: 2px solid #a82145;
 }
 
@@ -1216,7 +1226,7 @@ body {
 
 .filter-form {
   width: 879px;
-  height: 132px;
+
 
   display: flex;
   flex-wrap: wrap;
@@ -1241,7 +1251,7 @@ body {
   flex-direction: column;
 
   width: 194px;
-  height: 58px;
+
   padding: 0;
   margin: 0;
   margin-right: 14px;
@@ -1255,7 +1265,6 @@ body {
   flex-direction: column;
 
   width: 221px;
-  height: 58px;
   padding: 0;
   margin: 0;
   margin-right: 14px;
@@ -1267,9 +1276,10 @@ body {
 .filter-fat {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
 
   width: 416px;
-  height: 58px;
+
   padding: 0;
   margin: 0;
   margin-right: 13px;
@@ -1281,10 +1291,9 @@ body {
 .filter-fat-list {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+
 
   width: 418px;
-  height: 42px;
   padding: 0;
   margin: 0;
 
@@ -1295,9 +1304,9 @@ body {
 .filter-filler {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
 
   width: 702px;
-  height: 58px;
   padding: 0;
   margin: 0;
   margin-right: 14px;
@@ -1309,10 +1318,9 @@ body {
 .filter-filler-list {
   display: flex;
   justify-content: space-around;
-  align-items: center;
 
   width: 702px;
-  height: 42px;
+
   padding: 0;
   margin: 0;
 
@@ -1324,4 +1332,244 @@ body {
   width: 145px;
   height: 42px;
   margin-right: 14px;
+}
+
+.modal {
+  border-radius: 6px;
+
+}
+
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  width: 144px;
+  padding: 0;
+  margin: 0;
+  padding-left: 6px;
+  padding-right: 8px;
+  margin-bottom: 20px;
+
+
+  list-style: none;
+
+  outline: 2px solid #a82145;
+
+}
+
+.modal-catalog {
+  display: flex;
+  flex-direction: column;
+
+
+  box-sizing: border-box;
+
+  width: 128px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.modal-catalog li {
+  display: flex;
+  flex-direction: column;
+
+  width: 113px;
+  padding: 0;
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0;
+
+  list-style: none;
+
+}
+
+.modal-catalog li:first-child {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d1d0ce;
+}
+
+
+.modal-login {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  width: 278px;
+
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 18px;
+  padding-bottom: 20px;
+
+outline: 2px solid #a82145;
+}
+
+.login-user,
+.password {
+  display: flex;
+
+  width: 240px;
+  margin: 0;
+  padding: 0;
+}
+
+.login-form-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  width: 240px;
+  padding: 0;
+  margin: 0;
+
+  outline: 1px solid skyblue;
+}
+
+.button-login {
+  box-sizing: border-box;
+  width: 103px;
+  height: 45px;
+
+  margin-right: 20px;
+  border-radius: 22px;
+}
+
+.login-form-links p {
+  display: flex;
+  flex-direction: column;
+
+  width: 119px;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid skyblue;
+}
+
+.modal-feedback {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  width: 478px;
+
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 17px;
+  outline: 1px solid skyblue;
+}
+
+.modal-feedback-title {
+  display: flex;
+  justify-content: space-between;
+  width: 436px;
+
+  margin: 0;
+  padding: 0;
+  outline: 1px solid skyblue;
+}
+
+.user-name,
+.user-email {
+  display: flex;
+  align-self: flex-start;
+
+  width: 267px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.feedback {
+  display: flex;
+  align-self: flex-start;
+
+  width: 426px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.button-feedback {
+  width: 139px;
+  height: 45px;
+  margin-left: 290px;
+}
+
+.modal-search {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  width: 342px;
+  padding: 20px 15px;
+  margin: 0;
+  outline: 1px solid skyblue;
+}
+
+.search-find {
+  display: flex;
+
+  width: 312px;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid skyblue;
+
+}
+
+.modal-item {
+  display: flex;
+  flex-direction: column;
+
+  width: 293px;
+  padding: 0;
+  margin: 0;
+
+
+  background: rgba(255, 255, 255, 0.2)
+}
+
+.button-modal-item {
+  width: 202px;
+  height: 45px;
+
+  margin-top: 339px;
+  margin-bottom: 22px;
+  margin-right: 46px;
+  margin-left: 47px;
+}
+
+.modal-cart {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  width: 540px;
+  margin: 0;
+  padding: 15px;
+}
+
+.cart-contents {
+  width: 512px;
+  outline: 1px solid skyblue;
+}
+
+.total-price {
+  padding-left: 398px;
+  border-top: 1px solid #d1d0ce;
+}
+
+.button-cart {
+  width: 171px;
+  height: 45px;
+  margin-left: 340px;
+  margin-top: 15px;
+
 }

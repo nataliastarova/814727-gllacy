@@ -34,7 +34,7 @@
                 <li class="login-link">
                   <a href="login.html">Вход</a><!-- Форма входа, размечена внизу -->
                 </li>
-                <li class="user-navigation-cart">
+                <li class="user-navigation-cart ">
                   <a href="#">Пусто</a> <!-- Сделала как ссылку на отдельную страницу-->
                 </li>
               </ul>
@@ -242,13 +242,13 @@
 
       <section class="modal modal-menu">
         <h2 class="visually-hidden">Каталог</h2>
-          <ul class="modal-catalog">
-            <li><a class="catalog-new.html">Новинки</a></li>
-            <li><a class="catalog.html">Сливочное</a></li>
-            <li><a class="catalog-sorbets.html">Щербеты</a></li>
-            <li><a class="catalog-ice.html">Фруктовый лед</a></li>
-            <li><a class="catalog-melorin.html">Мелорин</a></li>
-          </ul>
+        <ul class="modal-catalog">
+          <li><a class="catalog-new.html">Новинки</a></li>
+          <li><a class="catalog.html">Сливочное</a></li>
+          <li><a class="catalog-sorbets.html">Щербеты</a></li>
+          <li><a class="catalog-ice.html">Фруктовый лед</a></li>
+          <li><a class="catalog-melorin.html">Мелорин</a></li>
+        </ul>
       </section>
 
       <section class="modal modal-login">
@@ -262,23 +262,29 @@
             <label class="visually-hidden" for="user-password">Пароль</label>
             <input class="password" id="user-password" type="password" name="password" placeholder="Пароль" required>
           </p>
-          <button class="button button-login" type="submit">Войти</button>
-          <p>
-            <a class="restore" href="#">Забыли пароль?</a>
-            <a class="new-registration" href="#">Новая регистрация</a>
-          </p>
+          <div class="login-form-wrapper">
+            <button class="button button-login" type="submit">Войти</button>
+            <div class="login-form-links">
+              <p>
+              <a class="restore" href="#">Забыли пароль?</a>
+              <a class="new-registration" href="#">Новая регистрация</a>
+            </p>
+            </div>
+          </div>
         </form>
       </section>
 
       <section class="modal modal-feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
-          <button class="modal-close" type="button">X</button>
-          <p>
-            <label class="visually-hidden" for="user-name-feedback">Имя</label>
-            <input class="user-name" id="user-name-feedback" type="text" name="user-name" placeholder="Как вас зовут?" required>
-          </p>
+          <div class="modal-feedback-title">
+            <h3 class="feedback-title">Мы обязательно вам ответим!</h3>
+            <button class="modal-close" type="button">X</button>
+          </div>
+            <p>
+              <label class="visually-hidden" for="user-name-feedback">Имя</label>
+              <input class="user-name" id="user-name-feedback" type="text" name="user-name" placeholder="Как вас зовут?" required>
+            </p>
           <p>
             <label class="visually-hidden" for="user-email-feedback">Электронная почта</label>
             <input class="user-email" id="user-email-feedback" type="email" name="user-email" placeholder="Ваша почта для ответа?" required>
