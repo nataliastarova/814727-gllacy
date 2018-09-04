@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="inner-page">
+  <body>
     <div class="page-wrapper">
       <header class="main-header">
         <nav class="main-navigation">
@@ -171,26 +171,30 @@
 
         <div class="index-columns"> <!--Обернула в див для позиционирования-->
           <article class="news">
-            <h2>Новости в нашем блоге</h2>
-            <a href="blog-news.html">10 способов сервировки фруктовых щербетов к столу</a>
+            <div class="news-wrapper">
+              <h2>Новости в нашем блоге</h2>
+              <a href="blog-news.html">10 способов сервировки фруктовых щербетов к столу</a>
+            </div>
           </article>
 
           <section class="subscription">
             <h2 class="visually-hidden">Подписка</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будтете  всегда вкусре  всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="user-subscription">Электронная почта</label>
-              <input class="subscribe" id="user-subscription" type="email" name="subscribe" placeholder="Электронная почта" required>
-            </form>
-            <button class="button subscription-button" type="submit">Отправить</button>
+            <div class="subscription-wrapper">
+              <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="user-subscription">Электронная почта</label>
+                <input class="subscribe" id="user-subscription" type="email" name="subscribe" placeholder="Электронная почта" required>
+              </form>
+              <button class="button subscription-button" type="submit">Отправить</button>
+            </div>
           </section>
         </div>
 
         <!--Карта-->
         <section class="map"> <!--Не уверена что это правильно-->
           <h2 class="visually-hidden">Как до нас добраться</h2>
+          <img src="img/map.jpg" width="1200" height="430" alt="Карта">
           <div class="map-wrapper">
-            <img src="img/map.jpg" width="1200" height="430" alt="Карта">
             <section class="contacts">
               <h3 class="visually-hidden">Контактная информация</h3>
                 <h4>Адрес главного офиса и офлайн-магазина:</h4>
