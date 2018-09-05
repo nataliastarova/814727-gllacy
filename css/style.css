@@ -882,13 +882,6 @@ body {
 
 
 /* Main */
-.container {
-  width:1146px;
-  margin:0 auto;
-  /* Временно для сетки */
-  outline: 5px solid blue;
-
-}
 
 .promo {
   margin-bottom: 40px;
@@ -1057,6 +1050,7 @@ body {
   width: 130px;
   height: 45px;
 }
+
 .map {
   width: 1200px;
   height: 430px;
@@ -1070,9 +1064,9 @@ body {
 
 .map-wrapper {
   position: relative;
+
   margin: 0 auto;
   outline: 2px solid #a82145;
-
 }
 
 .contacts {
