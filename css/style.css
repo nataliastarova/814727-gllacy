@@ -1083,7 +1083,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-cart {
   display: block;
-  width: 100px;
+  max-width: 119px;
 
   padding: 0;
   margin: 0;
@@ -1097,7 +1097,7 @@ input[type="radio"].visually-hidden {
 
 .full-cart {
   position: relative;
-  width: 119px;
+  
 
   padding: 0;
   margin: 0;
@@ -1504,6 +1504,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
+
   list-style: none;
   /* Временно для сетки */
   min-height: 230px;
@@ -1511,7 +1512,12 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item {
+
+  display: block;
   width: 560px;
+  padding-left: 20px;
+  border-radius: 12px;
+
   /* Временно для сетки */
   min-height: 230px;
   outline: 5px solid #a82145;
