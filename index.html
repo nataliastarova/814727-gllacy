@@ -8,6 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <input class="visually-hidden" type="radio" id="switch-slide-1" name="switch" checked>
+    <input class="visually-hidden" type="radio" id="switch-slide-2" name="switch">
+    <input class="visually-hidden" type="radio" id="switch-slide-3" name="switch">
+
     <div class="page-wrapper">
       <header class="main-header">
         <nav class="main-navigation">
@@ -104,37 +108,36 @@
         </nav>
       </header>
 
-      <main>
+      <main class="main-container">
         <h1 class="visually-hidden">Магазин «Глэйси»</h1>
 
-        <section class="slider">
-          <h2 class="visually-hidden">Слайдер</h2>
+
           <!-- Тут должен быть слайдер, который переключает фон -->
-          <ul>
-            <li class="slide">
-              <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
-              <img src="img/slide-1.png" width="533" height="441" alt="Крем-брюле и пломбир с малиновым джемом">
-              <button class="button slide-button" type="button" id="slide-button-1">Давайте оба!</button>     <!-- Сделала списком-->
+        <section class="main-slider">
+          <h2 class="visually-hidden">Слайдер</h2>
+
+          <div class="slider-controls">
+            <label for="slide-1">Первый</label>
+            <label for="slide-2">Второй</label>
+            <label for="slide-3">Третий</label>
+          </div>
+
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide-1">
+              <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button main-slider-button" href="catalog.html">Давайте оба!</a>
             </li>
-            <li class="slide">
-              <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
-              <img src="img/slide-2.png" width="533" height="430" alt="Шоколадный пломбир и лимонный сорбет">
-              <button class="button slide-button" type="button" id="slide-button-2">Давайте оба!</button>     <!-- Тут будет кнопка -->
+            <li class="slider-item slide" id="slide-2">
+              <h3>Шоколадный пломбир и лимонный сорбет</h3>
+              <a class="button main-slider-button" href="catalog.html">Давайте оба!</a>
             </li>
-            <li class="slide">
-              <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
-              <img src="img/slide-3.png" width="540" height="427" alt="Пломбир с помадкой и клубничный щербет">
-              <button class="button slide-button" id="slide-button-3" type="button">Давайте оба!</button>     <!-- Тут будет кнопка -->
+            <li class="slider-item slide" id="slide-3">
+              <h3>Пломбир с помадкой и клубничный щербет</h3>
+              <a class="button main-slider-button" href="catalog.html">Давайте оба!</a>
             </li>
           </ul>
-          <div class="slide">
-            <ul>
-              <li><button class="slider-button" id="slider-button-1" type="button">Первый слайд</button></li> <!--  добавила  id-->
-              <li><button class="slider-button" id="slider-button-2" type="button">Второй Слайд</button></li>
-              <li><button class="slider-button" id="slider-button-3" type="button">Третий слайд</button></li>
-            </ul>
-        </div>
         </section>
+
 
         <section class="promo">
           <h2 class="visually-hidden">Акции</h2>
@@ -142,7 +145,7 @@
             <li class="promo-item raspberry">
               <h3 class="promo-title">Малинка даром!</h3>
               <p class="promo-offer">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</p>
-              <a class=" button promo-button" href="catalog.html">Хочу варенье!</a>
+              <a class="button promo-button" href="catalog.html">Хочу варенье!</a>
             </li>
             <li class="promo-item chocolate">
               <h3 class="promo-title">Шоколадки даром!</h3>
@@ -155,53 +158,70 @@
         <section class="catalog">
           <h2 class="visually-hidden">Хит продаж</h2>
           <ul class="catalog-list">
+
             <li class="catalog-item hit">
-              <a href="catalog-item.html">
-                <h3 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                <p class="catalog-item-image">
-                  <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <div class="item-container">
+                <a href="catalog-item.html">
+                  <p class="catalog-item-image">
+                    <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  </p>
+                </a>
+                <p class="item-price">
+                  <b>310 ₽</b><span>&#47;кг</span>
                 </p>
-              </a>
-              <p class="item-price">
-                <b>310 ₽</b><span>&#47;кг</span>
-              </p>
-              <a class="button button-item" href="#">Быстрый просмотр</a>
+                <a href="catalog-item">
+                    <h3 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                  </a>
+                <a class="button button-item" href="#">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-item hit">
-              <a href="catalog-item.html">
-                <h3 class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</h3>
-                <p class="catalog-item-image">
-                  <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              <div class="item-container">
+                <a href="catalog-item.html">
+                  <p class="catalog-item-image">
+                    <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                  </p>
+                </a>
+                <p class="item-price">
+                  <b>380 ₽</b><span>&#47;кг</span>
                 </p>
-              </a>
-              <p class="item-price">
-                <b>380 ₽</b><span>&#47;кг</span>
-              </p>
-              <a class="button button-item" href="#">Быстрый просмотр</a>
+                <a href="catalog-item.html">
+                 <h3 class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</h3>
+                </a>
+                <a class="button button-item" href="#">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-item hit">
-              <a href="catalog-item.html">
-                <h3 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                <p class="catalog-item-image">
-                  <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <div class="item-container">
+                <a href="catalog-item.html">
+                  <p class="catalog-item-image">
+                    <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  </p>
+                </a>
+                <p class="item-price">
+                  <b>355 ₽</b><span>&#47;кг</span>
                 </p>
-              </a>
-              <p class="item-price">
-                <b>355 ₽</b><span>&#47;кг</span>
-              </p>
-              <a class="button button-item" href="#">Быстрый просмотр</a>
+                <a href="catalog-item.html">
+                  <h3 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                </a>
+                <a class="button button-item" href="#">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="catalog-item hit">
-              <a href="catalog-item.html">
-                <h3 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h3>
-                <p class="catalog-item-image">
-                  <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              <div class="item-container">
+                <a href="catalog-item.html">
+                  <p class="catalog-item-image">
+                    <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                  </p>
+                </a>
+                <p class="item-price">
+                  <b>415 ₽</b><span>&#47;кг</span>
                 </p>
-              </a>
-              <p class="item-price">
-                <b>415 ₽</b><span>&#47;кг</span>
-              </p>
-              <a class="button button-item" href="#">Быстрый просмотр</a>
+                <a href="catalog-item.html">
+                  <h3 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h3>
+                </a>
+                <a class="button button-item" href="#">Быстрый просмотр</a>
+              </div>
             </li>
           </ul>
         </section>
@@ -247,7 +267,6 @@
             </div>
           </section>
         </div>
-
       </main>
     </div>
     <!--Карта-->
