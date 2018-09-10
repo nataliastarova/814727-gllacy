@@ -14,6 +14,7 @@ body {
 
 a {
   text-decoration-color: rgba(255, 255, 255, 0.2);
+  background: transparent;
  }
 
 img {
@@ -21,9 +22,35 @@ img {
   height: auto;
  }
 
-.page-wrapper {
+.filters {
   width: 1146px;
   margin: 0 auto;
+}
+
+
+
+.site-wrapper {
+  min-width: 1146px;
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/slide-2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/slide-3.png");
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -191,6 +218,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #d07058;
   border-radius: 40px;
+
+  text-decoration: none;
 }
 
 .user-navigation {
@@ -289,8 +318,8 @@ input[type="radio"].visually-hidden {
   width: 21px;
   height: 19px;
 
-  left: 16px;
-  top: 6px;
+  left: 25px;
+  top: 7px;
 }
 
 .login-link-enter:focus,
@@ -508,6 +537,8 @@ input[type="radio"].visually-hidden {
 .main-container {
   position: relative;
 }
+
+
 .main-slider {
   margin-top: 260px;
   margin-bottom: 41px;
@@ -575,34 +606,34 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-#switch-slide-1:checked ~ .page-wrapper {
+#switch-slide-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
 }
 
-#switch-slide-2:checked ~ .page-wrapper {
+#switch-slide-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slide-2.png");
   background-repeat: no-repeat;
 }
 
-#switch-slide-3:checked ~ .page-wrapper {
+#switch-slide-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slide-3.png");
   background-repeat: no-repeat;
 }
 
 
-#switch-slide-1:checked ~ .page-wrapper #slide-1,
-#switch-slide-2:checked ~ .page-wrapper #slide-2,
-#switch-slide-3:checked ~ .page-wrapper #slide-3 {
+#switch-slide-1:checked ~ .site-wrapper #slide-1,
+#switch-slide-2:checked ~ .site-wrapper #slide-2,
+#switch-slide-3:checked ~ .site-wrapper #slide-3 {
   display: block;
 }
 
-#switch-slide-1:checked ~ .page-wrapper label[for="switch-slide-1"],
-#switch-slide-2:checked ~ .page-wrapper label[for="switch-slide-2"],
-#switch-slide-3:checked ~ .page-wrapper label[for="switch-slide-3"] {
+#switch-slide-1:checked ~ .site-wrapper label[for="switch-slide-1"],
+#switch-slide-2:checked ~ .site-wrapper label[for="switch-slide-2"],
+#switch-slide-3:checked ~ .site-wrapper label[for="switch-slide-3"] {
   background-color: #ffffff;
 }
 
@@ -618,7 +649,7 @@ input[type="radio"].visually-hidden {
 .promo-title {
   font-size: 35px;
   line-height: 41px;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 20px;
 }
 
@@ -628,8 +659,6 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-
-
 }
 
 .raspberry {
@@ -654,6 +683,7 @@ input[type="radio"].visually-hidden {
 /*Каталог товаров*/
 .catalog-list {
   list-style: none;
+  margin-bottom: 40px;
 }
 
 .catalog-list a {
@@ -734,7 +764,7 @@ input[type="radio"].visually-hidden {
 .hit::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   z-index: 3;
   width: 61px;
@@ -986,6 +1016,11 @@ input[type="radio"].visually-hidden {
 }
 
 /*Стилизация каталога товаров, заголовок*/
+.page-wrapper {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0;
+}
 .page-title {
   font-size: 35px;
   line-height: 41px;
@@ -995,6 +1030,7 @@ input[type="radio"].visually-hidden {
 
 /*Стилизация каталога, навигация*/
 .breadcrumbs {
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -1002,24 +1038,27 @@ input[type="radio"].visually-hidden {
 }
 .
 .breadcrumbs li {
-  position: relative;
 
   margin-right: 20px;
 
   list-style: none;
 }
 
-.breadcrumbs li:not(:last-child)::after {
+.breadcrumbs a::after {
   content: "»";
-
   display: block;
 
   position: absolute;
   top: 0px;
-  right: -15px;
+  right: -12px;
+
+  width: 6px;
+  height: 6px;
+  color: rgb(255, 255, 255);
 }
 
 .breadcrumbs a {
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -1107,6 +1146,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filters select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   position: relative;
 
   font-weight: 500;
@@ -1357,24 +1400,64 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   border-bottom: none;
 }
 .pagination-item {
+
+  display: block;
+
+  padding: 6px 10px;
+
   list-style: none;
   color: #ffffff;
   border-bottom: none;
+
+  outline: 1px solid red;
 }
 
 .pagination-item a {
+
   color: #ffffff;
-  background-color: #849d8f;
 
 }
+
+.back-page-link {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 8px;
+  height: 12px;
+  transform: scale(-1);
+}
+
+.next-page-link {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 8px;
+  height: 12px;
+}
+
 .pagination-item a:hover,
 .pagination-item a:focus {
-  background-color: #9db1a5;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-item a:active {
+
   color: #323232;
   background-color: #ffffff;
+}
+
+.pagination-item-current {
+
+  height: 21px;
+
+  color: #323232;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .pagination-item-current a {
@@ -1382,15 +1465,23 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   background-color: #ffffff;
 }
 
+.pagination-item-current a:hover {
+  margin: 0;
+  padding: 0;
+  width: 26px;
+  height: 21px;
+}
+
+
+
 /*footer*/
 .main-footer  {
   font-size: 13px;
   line-height: 18px;
-  color: #e6ebe9;
 }
 
 .main-footer a {
-  color: #e6ebe9;
+  color: #ffffff;
 }
 
 .main-footer ul {
@@ -1848,7 +1939,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
   color: #323232;
 
-  background-color: #ffffff;
+
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
@@ -1896,7 +1987,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .button-cart {
   width: 171px;
   margin-left: 285px;
-  margin-top: 15px;
+  margin-right: 15px;
   border-radius: 22px;
 
 
@@ -1926,13 +2017,13 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   background-color: rgba(248, 247, 244, 0.99);
 }
 
-.empty::before {
+/*.empty::before {
   content: "";
 
   position: absolute;
 
-  top: 7px;
-  left: 17px;
+  top: 8px;
+  left: 22px;;
 
   width: 20px;
   height: 20px;
@@ -1940,7 +2031,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
+}*/
 
 .user-navigation a.empty {
   padding-left: 40px;
@@ -1970,6 +2061,29 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.user-navigation-cart svg.cart-button-img {
+
+  top: 7px;
+  position: absolute;
+  width: 21px;
+  height: 19px;
+
+  left: 25px;
+}
+
+.empty:focus,
+.empty:hover {
+  background-color: #f8f7f4;
+}
+
+.empty:focus path,
+.empty:hover path,
+.empty:focus circle,
+.empty:hover circle {
+  fill: #000000;
+}
+
+
 
 .user-navigation-cart {
   position: relative;
@@ -1987,14 +2101,12 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .cart-contents {
   margin: 0;
-  margin-bottom: 13px;
   padding: 0;
 
   text-align: left;
 
   border-spacing: 0 19px;
   box-sizing: border-box;
-  border-bottom: 1px solid #cacac7;
 }
 
 .cart-contents .delete-button {
@@ -2020,7 +2132,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-
+  margin-top: 15px;
+  padding-top: 10px;
   text-align: right;
 }
 
@@ -2388,24 +2501,34 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .pagination {
+  position: relative;
   display: flex;
   justify-content: flex-end;
 
   margin-bottom: 38px;
+  line-height: 18px;
+  font-weight: 500;
  }
 
 .pagination-wrapper {
   display: flex;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
 
-  
+.pagination-wrapper a {
+  margin: 0;
+  padding: 0;
+  width: 26px;
+  height: 21px;
 }
 
 .pagination-list {
-  display: flex;
-
-  margin-left: 15px;
-  margin-right: 20px;
+  display: inline-flex;
+  margin: 16px;
   padding: 0;
+  margin-left: 0;
 
   list-style: none;
 
@@ -2452,6 +2575,18 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   list-style: none;
 }
 
+.footer-social-list .social-button {
+  display: inline-block;
+
+  width: 32px;
+  height: 32px;
+
+  margin-right: 10px;
+
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
 .social-button {
   width: 40px;
   height: 40px;
@@ -2459,7 +2594,27 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   margin: 0;
   padding: 0;
 
-  
+}
+
+.social-button path {
+  opacity: 0.8;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active,
+.social-button:active {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-button:hover path,
+.social-button:focus path {
+  opacity: 1;
+}
+
+.social-button:active path,
+.social-button:active path {
+  fill: #e9e9e9;
 }
 
 .footer-info {
@@ -2474,6 +2629,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .footer-info-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
 
@@ -2482,9 +2638,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   padding: 0;
 
   list-style: none;
-
-
-  
 }
 
 .footer-info-list li {
@@ -2497,7 +2650,18 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
   list-style: none;
 
-  
+}
+
+.footer-info-list::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+
 }
 
 .footer-info-list li:nth-child(odd) {
