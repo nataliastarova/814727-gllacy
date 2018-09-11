@@ -1400,22 +1400,20 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   border-bottom: none;
 }
 .pagination-item {
-
   display: block;
-
-  padding: 6px 10px;
+  padding: 6px 12px;
 
   list-style: none;
   color: #ffffff;
   border-bottom: none;
 
-  outline: 1px solid red;
+
 }
 
 .pagination-item a {
-
+  padding: 0;
   color: #ffffff;
-
+  text-decoration: none;
 }
 
 .back-page-link {
@@ -1435,12 +1433,9 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   height: 12px;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
-  padding-right: 8px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 8px;
+.pagination-item:hover,
+.pagination-item:focus {
+
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
 }
@@ -1462,7 +1457,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .pagination-item-current a {
   color: #323232;
-  background-color: #ffffff;
+  
 }
 
 .pagination-item-current a:hover {
@@ -2042,7 +2037,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .user-navigation a.empty:focus,
 .user-navigation-cart a.full-cart:hover,
 .user-navigation-cart a.full-cart:focus {
-  padding-left: 40px;
+  padding-left: 44px;
   color: #323232;
 }
 
