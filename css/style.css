@@ -1372,12 +1372,14 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 /*Пагинация*/
 .pagination a {
+  font-size: 16px;
+  line-height: 18px;
   border-bottom: none;
 }
 
 .pagination-item {
   display: block;
-  padding: 6px 12px;
+  padding: 6px 10px;
 
   list-style: none;
   color: #ffffff;
@@ -1392,8 +1394,9 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .back-page-link {
   position: absolute;
-  top: 0;
-  left: -5px;
+  left: 0px;
+  top: 5px;
+
   width: 8px;
   height: 12px;
   transform: scale(-1);
@@ -1407,6 +1410,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   height: 12px;
 }
 
+
+
 .pagination-item:hover,
 .pagination-item:focus {
   border-radius: 50%;
@@ -1419,7 +1424,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .pagination-item-current {
-  height: 21px;
 
   color: #323232;
   background-color: #ffffff;
@@ -1434,7 +1438,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   margin: 0;
   padding: 0;
   width: 26px;
-  height: 21px;
 }
 
 
@@ -1443,6 +1446,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .main-footer  {
   font-size: 13px;
   line-height: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .main-footer a {
@@ -2449,14 +2453,12 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   margin: 0;
   padding: 0;
   width: 26px;
-  height: 21px;
 }
 
 .pagination-list {
   display: inline-flex;
-  margin: 16px;
+  margin: 15px;
   padding: 0;
-  margin-left: 0;
 
   list-style: none;
 }
