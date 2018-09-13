@@ -1494,7 +1494,10 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .copyright-logo {
+  background-image: url("../img/logo-htmlacademy.svg");
+  background: no-repeat;
   border-bottom: none;
+
 }
 
 .copyright-info a:hover,
@@ -2594,13 +2597,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   list-style: none;
 }
 
-.copyright-logo {
-  width: 108px;
-  height: 39px;
-}
-
 .copyright-info {
-  width: 190px;
+
 
   margin: 0;
   padding: 0;
