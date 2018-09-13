@@ -224,16 +224,26 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
   display: flex;
+  flex-direction: row-reverse;
   align-self: flex-start;
+
+  min-width: 245px;
+  padding: 0;
+  /*margin-left: auto;*/
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-
-  min-width: 245px;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 0;
 
 }
 
@@ -245,8 +255,6 @@ input[type="radio"].visually-hidden {
 
   vertical-align: middle;
   color: #ffffff;
-
-  padding: 9px 16px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -311,6 +319,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .login-link-enter {
   padding-left: 44px;
+  padding-right: 16px;
 }
 
 .login-link-enter svg.login-button-img {
@@ -318,7 +327,7 @@ input[type="radio"].visually-hidden {
   width: 21px;
   height: 19px;
 
-  left: 25px;
+  left: 17px;
   top: 7px;
 }
 
@@ -519,6 +528,7 @@ input[type="radio"].visually-hidden {
 .work-hours {
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
 }
 
 .header-phone {
@@ -1544,11 +1554,11 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   position: relative;
   display: inline-block;
 
-  width: 65px;
+  width: 90px;
 
   padding: 0;
   margin: 0;
-  margin-right: 25px;
+
 }
 
 
@@ -1895,7 +1905,9 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 /*Товары в корзине*/
 
 .user-navigation-cart {
+  position: relative;
   display: block;
+  width: 119px;
 
   padding: 0;
   margin: 0;
@@ -1905,6 +1917,12 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .user-navigation-cart a {
   padding-left: 40px;
+}
+
+
+.user-navigation-cart:hover .modal-cart {
+  display: block;
+  z-index: 10;
 }
 
 .full-cart {
@@ -1921,6 +1939,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   background-color: #ffffff;
   margin: 0px;
   padding-left: 44px;
+  padding-right: 17px;
 }
 
 .modal-cart {
@@ -2037,7 +2056,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }*/
 
 .user-navigation a.empty {
-  padding-left: 40px;
+  padding-right: 16px;
+  padding-left: 46px;
   color: #ffffff;
 }
 
@@ -2053,11 +2073,11 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   content: "";
 
   position: absolute;
-  width: 21px;
-  height: 20px;
-
-  left: 20px;
+  left: 17px;
   top: 7px;
+
+  width: 20px;
+  height: 20px;
 
   background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
@@ -2065,12 +2085,11 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 .user-navigation-cart svg.cart-button-img {
 
-  top: 7px;
   position: absolute;
-  width: 21px;
-  height: 19px;
-
-  left: 25px;
+  top: 7px;
+  left: 17px;
+  width: 20px;
+  height: 20px;
 }
 
 .empty:focus,
@@ -2087,14 +2106,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 
 
-.user-navigation-cart {
-  position: relative;
-}
 
-.user-navigation-cart:hover .modal-cart {
-  display: block;
-  z-index: 10;
-}
 
 .cart-contents img {
   margin-right: 10px;
@@ -2200,13 +2212,13 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   display: flex;
   align-items: flex-start;
 
-  width: 970px;
+  width: 982px;
 
 
   margin: 0;
-  margin-left: 23px;
-  margin-top: 20px;
   padding:0;
+  margin-left: 10px;
+  padding-top: 13px;
 
   
 }
@@ -2225,11 +2237,10 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 
 .delivery {
-  display: flex;
-
+  width: 174px;
   padding: 0;
   margin: 0;
-  margin-right: 10px;
+
 }
 
 .info {
@@ -2237,11 +2248,15 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
   padding: 0;
   margin: 0;
+}
+
+.info a.navigation-button {
+  padding-left: 9px;
 
 }
 
 .user-navigation li {
- padding-left: 10px;
+  margin-left: 10px;
 }
 
 .main-navigation .time {
@@ -2251,19 +2266,15 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .time {
   box-sizing: border-box;
-
- display: block;
-
-
+  display: block;
   margin: 0;
   padding: 0;
-  margin-top: 10px;
 }
 
 .time p {
-  margin: 0;
-  margin-left: auto;
   padding: 0;
+  margin: 0;
+  margin-left: 17px;
   padding-bottom: 5px;
 
 
