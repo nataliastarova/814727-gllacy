@@ -296,27 +296,6 @@ input[type="radio"].visually-hidden {
   fill: #000000;
 }
 
-
-/* .search-button::before {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  left: 8px;
-  top: 8px;
-  background-image: url("../img/icon-header-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-.search-button:hover::before,
-.search-button:focus::before {
-  background-image: url("../img/icon-header-enter-black.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-*/
-
-
 .user-navigation .login-link-enter {
   padding-left: 44px;
   padding-right: 16px;
@@ -544,6 +523,9 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.container {
+  position: relative;
+}
 
 .main-slider {
   margin-top: 260px;
@@ -699,9 +681,10 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   position: relative;
   display: flex;
+  padding:0;
+  margin: 0;
   width: 267px;
   margin-right: 26px;
-  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -723,7 +706,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
 
-  top: 0px;
+  top: 9px;
   right: -13px;
   left: -13px;
   bottom: -45px;
@@ -759,8 +742,11 @@ input[type="radio"].visually-hidden {
 .catalog-item .catalog-item-title {
   position: relative;
   z-index: 2;
+
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 16px;
+  
   line-height: 22px;
   font-weight: 500;
   text-decoration-color: rgba(255, 255, 255, 0.2);
@@ -793,8 +779,8 @@ input[type="radio"].visually-hidden {
 .item-price {
   position: relative;
   z-index: 2;
-  margin-top: -83px;
-  margin-left: -105px;
+  margin-top: -80px;
+  margin-left: -116px;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -809,14 +795,8 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.item-price.ruble {
-  position: absolute;
-  content: url("../img/ruble.svg");
-
-  top: 4px;
-  right: 50px;
-  width: 31px;
-  height: 36px;
+.ruble {
+  margin-left: -5px;
 }
 
 /* Особенности*/
@@ -1074,7 +1054,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 18px;
 
-  margin-bottom: 25px;
+  margin-bottom: 9px;
 }
 
 .filter {
@@ -1154,7 +1134,7 @@ input[type="radio"].visually-hidden {
   border: none;
   box-sizing: border-box;
 
-  background-image: url("../img/icon-down-dir.svg");
+  background-image: url("../img/icon-down-dir-white.svg");
   background-position: 168px center;
   background-repeat: no-repeat;
 }
@@ -1548,6 +1528,11 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .modal-menu a{
   text-decoration:none;
   color:#ffffff;
+}
+
+.catalog {
+  padding: 0;
+  margin:0;
 }
 
 .catalog-link {
@@ -2618,8 +2603,10 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 /*Сетка каталога*/
 
 .breadcrumbs {
-  display: flex;
+  position: absolute;
+  top: -20px;
 
+  display: flex;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
