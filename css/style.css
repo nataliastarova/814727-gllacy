@@ -365,6 +365,11 @@ input[type="radio"].visually-hidden {
   color: #323232;
 }
 
+.login-form p,
+.login-form-wrapper{
+  margin-top: 20px;
+}
+
 .login-form input[type="email"],
 .login-form input[type="password"] {
   box-sizing: border-box;
@@ -1871,12 +1876,15 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   box-sizing: border-box;
 
   width: 342px;
-  padding: 0;
   margin: 0;
+  padding: 20px 15px;
   
 }
 
-
+.find {
+  margin: 0;
+  padding: 0;
+}
 
 .find p {
   width: 315px;
