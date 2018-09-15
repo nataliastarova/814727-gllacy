@@ -463,7 +463,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 40px;
   left: -200px;
-
+  z-index: 10;
   display: none;
 }
 
@@ -471,6 +471,7 @@ input[type="radio"].visually-hidden {
 .login-link:focus .modal-login,
 .login-link:active .modal-login {
   display: flex;
+  z-index: 10;
 }
 
 .login-user,
@@ -1605,7 +1606,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 6px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .catalog-link:hover .modal-menu,
@@ -1860,6 +1861,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .search:focus .modal-search,
 .search:active .modal-search {
   display: flex;
+  z-index: 10;
 }
 
 .modal-search {
@@ -1950,7 +1952,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 
-.user-navigation-cart:hover .modal-cart {
+.user-navigation-cart:hover .modal-cart,
+.useer-navigation-cart:focus .modal-cart{
   display: block;
   z-index: 10;
 }
@@ -1998,7 +2001,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .user-navigation-cart .modal-cart {
   position: absolute;
-  top: 30px;
+  top: 40px;
   right: 0;
 
   display: none;
@@ -2042,14 +2045,18 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   
 }
 
-.cart-contents .button-cart {
+.modal-cart .button-cart {
   width: 170px;
   /* margin-left: 340px; */
   margin-right: 15px;
   padding-right: 0px;
   padding-left: 0px;
   margin-left: 340px;
+}
 
+.modal-cart .button-cart:hover,
+.modal-cart .button-cart:focus {
+  color: #ffffff;
 }
 
 /*----------КОРЗИНАКОРЗИНАКАРЗИНА----------*/
