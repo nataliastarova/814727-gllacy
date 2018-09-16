@@ -1702,6 +1702,11 @@ input[type="radio"].visually-hidden {
   padding-right: 5px;
 }
 
+
+.filter-sort::-ms-expand {
+  display: none;
+}
+
 .filter-sort{
   padding-top: 16px;
   padding: 9px;
