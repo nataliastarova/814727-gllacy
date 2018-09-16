@@ -1405,6 +1405,11 @@ input[type="radio"].visually-hidden {
   border-radius: 4px;
 }
 
+.subscription-form input[type="email"]:hover,
+.subscription-form input[type="email"]:focus {
+  border: 2px solid #d3d3d2;
+}
+
 .subscribe {
   display: block;
   box-sizing: border-box;
@@ -1417,8 +1422,8 @@ input[type="radio"].visually-hidden {
   padding: 10px 15px;
 }
 
-.subscribe  input:hover,
-.subscribe  input:focus{
+.subscribe input:hover,
+.subscribe input:focus{
   border: 2px solid #d3d3d2;
 }
 
@@ -1438,7 +1443,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*Карта и контакты*/
-
 .map {
   height: 430px;
   background-image: url(../img/map.jpg);
