@@ -70,7 +70,7 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/* ------------------ кнопки ------------------ */
+/* кнопки */
 .button {
   display: inline-block;
   font-weight: 700;
@@ -2209,9 +2209,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
  }
 
 /*Обратная связь*/
-
 .modal-feedback {
-  /*display: none;*/
+  display: none;
   position: fixed;
   top: 338px;
   left: 50%;
@@ -2310,7 +2309,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   }
-
 
 .feedback-form textarea {
   padding-top: 15px;
