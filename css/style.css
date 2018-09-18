@@ -2253,16 +2253,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   }
 }
 
-.modal-show {
-  display: block;
-
-  animation: bounce 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
 .modal-feedback {
   position: fixed;
   top: 338px;
@@ -2275,6 +2265,16 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   color: #323232;
   display: none;
   z-index: 20;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .feedback-form {
@@ -2373,15 +2373,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .feedback-form textarea:hover,
 .feedback-form textarea:focus {
   border: 2px solid #d3d3d2;
-}
-
-.user-name:hover,
-.user-name:focus,
-.user-email:hover,
-.user-email:focus,
-.feedback:hover,
-.feedback:focus {
-  color: #d3d3d2;
 }
 
 .modal-close::before {

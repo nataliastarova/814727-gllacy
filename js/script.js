@@ -47,8 +47,6 @@
   });
 
   form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-error");
     if (!login.value || !email.value || !feedback.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
