@@ -1444,21 +1444,27 @@ input[type="radio"].visually-hidden {
 
 /*Карта и контакты*/
 .map {
+  position: relative;
   height: 430px;
   background-image: url(../img/map.jpg);
 }
 
-.map-wrapper {
-  position: relative;
-  width: 1146px;
+.google-map {
+  width: 100%;
   margin: 0 auto;
 }
+
+/*.map-wrapper {*/
+  /*position: relative;*/
+  /*width: 1146px;*/
+  /*margin: 0 auto;*/
+/*}*/
 
 .contacts {
   position: absolute;
   top: 63px;
-  right: 1px;
-
+  left: 50%;
+  
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -1466,6 +1472,7 @@ input[type="radio"].visually-hidden {
   width: 302px;
   padding: 25px;
   margin: 0;
+  margin-left: 270px;
   padding-top: 28px;
   padding-right: 20px;
   padding-bottom: 30px;
