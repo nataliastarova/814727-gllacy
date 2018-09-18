@@ -807,6 +807,7 @@ input[type="radio"].visually-hidden {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
+  margin: 1px;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -816,6 +817,7 @@ input[type="radio"].visually-hidden {
 .login-form input:hover,
 .login-form input:focus {
   border: 2px solid #d3d3d2;
+  margin: 0px;
 }
 
 .login-user,
@@ -950,7 +952,7 @@ input[type="radio"].visually-hidden {
 .find input[type="search"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
+  margin: 1px;
   padding: 10px 15px;
 
   font: inherit;
@@ -964,6 +966,7 @@ input[type="radio"].visually-hidden {
 .find input:hover,
 .find input:focus {
   border: 2px solid #d3d3d2;
+  margin: 0px;
 }
 
 .search-find:hover,
@@ -1529,6 +1532,7 @@ input[type="radio"].visually-hidden {
 .subscription-form input[type="email"] {
   font: inherit;
   color: #323232;
+  margin: 1px;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -1537,6 +1541,7 @@ input[type="radio"].visually-hidden {
 
 .subscription-form input[type="email"]:hover,
 .subscription-form input[type="email"]:focus {
+  margin: 0;
   border: 2px solid #d3d3d2;
 }
 
@@ -1555,6 +1560,7 @@ input[type="radio"].visually-hidden {
 
 .subscribe input:hover,
 .subscribe input:focus{
+  margin: 0;
   border: 2px solid #d3d3d2;
 }
 
@@ -2510,7 +2516,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .modal-feedback {
   position: fixed;
-  top: 338px;
+  top: 30px;
   left: 50%;
 
   margin-left: -245px;
@@ -2621,6 +2627,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 1px;
 
   font-size: 16px;
   color: #323232;
@@ -2639,6 +2646,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .feedback-form input:focus,
 .feedback-form textarea:hover,
 .feedback-form textarea:focus {
+  margin: 0;
   border: 2px solid #d3d3d2;
 }
 
