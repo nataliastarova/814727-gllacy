@@ -1,4 +1,5 @@
 # Личный проект «Глейси»
+nataliastarova.github.io
 
 * Студент: [Наталья Старова](https://up.htmlacademy.ru/htmlcss/22/user/814727).
 * Наставник: [Роман Коробейнков](https://up.htmlacademy.ru/htmlcss/22/user/245335).
